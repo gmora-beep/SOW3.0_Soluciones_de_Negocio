@@ -591,3 +591,37 @@ body{
     border-collapse:collapse;
     table-layout:fixed;
 }
+.opcion input[type="radio"]{
+    appearance:none;
+    -webkit-appearance:none;
+
+    width:18px;
+    height:18px;
+
+    border:2px solid #cbd5e1;
+    border-radius:4px;
+
+    cursor:pointer;
+}
+.opcion-estrategica input[type="radio"]{
+    border-color:#23c7c7;
+}
+
+.opcion-transformacion input[type="radio"]{
+    border-color:#8b5cf6;
+}
+
+.opcion-regulatoria input[type="radio"]{
+    border-color:#f59e0b;
+}
+.opcion-estrategica input[type="radio"]:checked{
+    background:#23c7c7;
+}
+
+.opcion-transformacion input[type="radio"]:checked{
+    background:#8b5cf6;
+}
+
+.opcion-regulatoria input[type="radio"]:checked{
+    background:#f59e0b;
+}
