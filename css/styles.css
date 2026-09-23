@@ -586,3 +586,8 @@ body{
     font-size:14px;
     font-family:inherit;
 }
+.tabla-hu{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+}
