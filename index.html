@@ -359,7 +359,7 @@
                         <th>Valor esperado</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="beneficios-cuantitativos">
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
@@ -374,6 +374,13 @@
                     </tr>
                 </tbody>
             </table>
+<div class="acciones-tabla">
+    <button type="button"
+            class="btn-agregar"
+            onclick="agregarBeneficioCuantitativo()">
+        ＋ Agregar
+    </button>
+</div>
         </div>
         <!-- Cualitativos -->
         <div class="beneficio-card">
@@ -389,12 +396,19 @@
                         <th>Beneficio</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="beneficios-cualitativos">
                     <tr><td><input type="text"></td></tr>
                     <tr><td><input type="text"></td></tr>
                     <tr><td><input type="text"></td></tr>
                 </tbody>
             </table>
+<div class="acciones-tabla">
+    <button type="button"
+            class="btn-agregar"
+            onclick="agregarBeneficioCualitativo()">
+        ＋ Agregar
+    </button>
+</div>
         </div>
         <!-- KPI -->
         <div class="beneficio-card">
@@ -412,7 +426,7 @@
                         <th>Meta esperada</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="necesidades-funcionales">
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
@@ -425,6 +439,13 @@
                     </tr>
                 </tbody>
             </table>
+<div class="acciones-tabla">
+    <button type="button"
+            class="btn-agregar"
+            onclick="agregarKPI()">
+        ＋ Agregar
+    </button>
+</div>
         </div>
     </div>
 </div>
@@ -445,7 +466,7 @@
                 <th>Necesidad funcional</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="necesidades-funcionales">
             <tr>
                 <td>NF-01</td>
                 <td><input type="text"></td>
@@ -468,6 +489,85 @@
             </tr>
         </tbody>
     </table>
+<div class="acciones-tabla">
+    <button type="button"
+            class="btn-agregar"
+            onclick="agregarNecesidadFuncional()">
+        ＋ Agregar necesidad
+    </button>
 </div>
+</div>
+<script>
+function agregarBeneficioCuantitativo(){
+    const tabla =
+        document.getElementById(
+            "beneficios-cuantitativos"
+        );
+    tabla.insertAdjacentHTML(
+        "beforeend",
+        `
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        `
+    );
+}
+function agregarBeneficioCualitativo(){
+    const tabla =
+        document.getElementById(
+            "beneficios-cualitativos"
+        );
+    tabla.insertAdjacentHTML(
+        "beforeend",
+        `
+        <tr>
+            <td><input type="text"></td>
+        </tr>
+        `
+    );
+}
+function agregarKPI(){
+    const tabla =
+        document.getElementById(
+            "kpis"
+        );
+    tabla.insertAdjacentHTML(
+        "beforeend",
+        `
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        `
+    );
+}
+function agregarNecesidadFuncional(){
+    const tabla =
+        document.getElementById(
+            "necesidades-funcionales"
+        );
+    const total =
+        tabla.rows.length + 1;
+    const id =
+        "NF-" +
+        total.toString().padStart(
+            2,
+            "0"
+        );
+    tabla.insertAdjacentHTML(
+        "beforeend",
+        `
+        <tr>
+            <td>${id}</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        `
+    );
+}
+</script>
 </body>
 </html>
