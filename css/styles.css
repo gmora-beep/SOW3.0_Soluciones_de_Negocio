@@ -525,3 +525,36 @@ body{
     background:transparent;
     outline:none;
 }
+.acciones-tabla{
+    display:flex;
+    justify-content:flex-end;
+    padding:10px;
+}
+.btn-agregar{
+    border:none;
+
+    background:#f8fafc;
+
+    color:#475569;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:8px;
+
+    padding:6px 12px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+.btn-agregar:hover{
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    border-color:#2563eb;
+}
