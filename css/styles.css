@@ -352,8 +352,9 @@ body{
 .leyenda-impactos{
     display:flex;
     justify-content:center;
-    gap:30px;
-    margin-top:16px;
+    gap:32px;
+    margin-top:20px;
+    font-weight:700;
     font-size:14px;
 }
 
@@ -371,4 +372,18 @@ body{
 
 .consulta{
     color:#1d4ed8;
+}
+.seccion-b h2{
+    color:#0ea5b7;
+}
+
+.seccion-c h2{
+    color:#6d28d9;
+}
+.seccion-b .seccion-letra{
+    background:#0ea5b7;
+}
+
+.seccion-c .seccion-letra{
+    background:#6d28d9;
 }
