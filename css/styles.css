@@ -528,28 +528,16 @@ body{
 .acciones-tabla{
     display:flex;
     justify-content:flex-end;
-    padding:10px;
+    margin-top:8px;
 }
 .btn-agregar{
-    border:none;
-
-    background:#f8fafc;
-
+    background:white;
+    border:1px dashed #cbd5e1;
     color:#475569;
-
-    border:1px solid #cbd5e1;
-
     border-radius:8px;
-
-    padding:6px 12px;
-
+    padding:8px 14px;
     font-size:13px;
-
     font-weight:600;
-
-    cursor:pointer;
-
-    transition:.2s;
 }
 .btn-agregar:hover{
     background:#eff6ff;
