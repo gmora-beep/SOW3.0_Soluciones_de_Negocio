@@ -222,11 +222,12 @@ body{
     cursor:pointer;
 }
 .campo-label{
-    width:180px;
-    min-width:180px;
+    width:260px;
+    min-width:260px;
     display:flex;
     align-items:center;
     gap:10px;
+    white-space:nowrap;
 }
 
 .icono{
