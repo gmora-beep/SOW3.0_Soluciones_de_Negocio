@@ -293,6 +293,7 @@ body{
     display:flex;
     flex-direction:column;
     gap:16px;
+    height:100%;
 }
 
 .problema-card{
@@ -395,4 +396,13 @@ body{
 
 .seccion-c .seccion-letra{
     background:#6d28d9;
+}
+.fila-bc{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:16px;
+    margin-top:16px;
+}
+.fila-bc .seccion-card{
+    height:100%;
 }
