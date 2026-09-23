@@ -417,3 +417,76 @@ body{
     gap:20px;
     margin:12px;
 }
+.seccion-d h2{
+    color:#f59e0b;
+}
+
+.seccion-d .seccion-letra{
+    background:#f59e0b;
+}
+
+.seccion-e h2{
+    color:#2563eb;
+}
+
+.seccion-e .seccion-letra{
+    background:#2563eb;
+}
+.beneficios-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1.2fr;
+    gap:16px;
+}
+.beneficio-card{
+    border:1px solid #f0dfbf;
+    border-radius:10px;
+    overflow:hidden;
+}
+.beneficio-header{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 12px;
+    background:#
+.tabla-beneficios{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.tabla-beneficios th{
+    background:#faf6ef;
+    padding:10px;
+}
+
+.tabla-beneficios td{
+    border:1px solid #ececec;
+    padding:6px;
+}
+.tabla-beneficios input{
+    width:100%;
+    border:none;
+    outline:none;
+}
+.subtexto-seccion{
+    margin:0 0 12px;
+    color:#64748b;
+    font-size:13px;
+}
+.tabla-necesidades{
+    width:100%;
+    border-collapse:collapse;
+}
+.tabla-necesidades th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+}
+.tabla-necesidades td{
+    border:1px solid #e5e7eb;
+    padding:10px;
+}
+.tabla-necesidades input{
+    width:100%;
+    border:none;
+    outline:none;
+}
