@@ -398,11 +398,22 @@ body{
     background:#6d28d9;
 }
 .fila-bc{
-    display:flex;
+    display:grid;
+    grid-template-columns:1fr 1fr;
     gap:20px;
-    margin-top:20px;
+    margin:12px;
 }
+
 .fila-bc .seccion-card{
-    flex:1;
     margin:0;
+    min-width:0;
+}
+.fila-bc .tabla-procesos{
+    table-layout:fixed;
+}
+.fila-bc{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:20px;
+    margin:12px;
 }
