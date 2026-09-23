@@ -457,6 +457,38 @@
     </button>
 </div>
 </div>
+<div class="seccion-card">
+    <div class="seccion-titulo seccion-f">
+        <div class="seccion-letra">
+            F
+        </div>
+        <h2>HISTORIAS DE USUARIO</h2>
+    </div>
+    <table class="tabla-hu">
+        <thead>
+            <tr>
+                <th style="width:100px;">
+                    ID
+                </th>
+                <th>
+                    Historia de Usuario
+                </th>
+                <th>
+                    Criterios de aceptación
+                </th>
+            </tr>
+        </thead>
+        <tbody id="historias-usuario">
+        </tbody>
+    </table>
+    <div class="acciones-tabla">
+        <button type="button"
+                class="btn-agregar"
+                onclick="agregarHU()">
+            ＋ Agregar HU
+        </button>
+    </div>
+</div>
 <script>
 function agregarBeneficioCuantitativo(){
     const tabla =
@@ -523,6 +555,42 @@ function agregarNecesidadFuncional(){
             <td>${id}</td>
             <td>
                 <input type="text">
+            </td>
+        </tr>
+        `
+    );
+}
+function agregarHU(){
+    const tabla =
+        document.getElementById(
+            "historias-usuario"
+        );
+    const total =
+        tabla.rows.length + 1;
+    const id =
+        "HU-" +
+        total.toString().padStart(
+            2,
+            "0"
+        );
+    tabla.insertAdjacentHTML(
+        "beforeend",
+        `
+        <tr>
+            <td class="hu-id">
+                ${id}
+            </td>
+            <td>
+                <textarea
+                    placeholder="Como..., quiero..., para..."
+                    class="hu-texto">
+                </textarea>
+            </td>
+            <td>
+                <textarea
+                    placeholder="Ingrese los criterios de aceptación"
+                    class="hu-criterios">
+                </textarea>
             </td>
         </tr>
         `
