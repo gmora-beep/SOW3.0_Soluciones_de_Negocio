@@ -359,20 +359,29 @@ body{
 }
 
 .nuevo{
-    color:#17a34a;
+    color:#16a34a;
+    font-weight:700;
+    font-size:15px;
 }
 
 .modificacion{
     color:#7c3aed;
+    font-weight:700;
+    font-size:15px;
 }
 
 .eliminacion{
     color:#f59e0b;
+    font-weight:700;
+    font-size:15px;
 }
 
 .consulta{
     color:#1d4ed8;
+    font-weight:700;
+    font-size:15px;
 }
+
 .seccion-b h2{
     color:#0ea5b7;
 }
