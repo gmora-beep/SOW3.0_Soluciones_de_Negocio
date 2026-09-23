@@ -289,3 +289,86 @@ body{
     width:80px;
     height:auto;
 }
+.problema-layout{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.problema-card{
+    border:1px solid #d8eef0;
+    border-radius:12px;
+    padding:16px;
+    background:#f9ffff;
+}
+
+.problema-header{
+    display:flex;
+    gap:12px;
+    margin-bottom:10px;
+}
+
+.problema-card h3{
+    margin:0;
+    color:#29475b;
+    font-size:15px;
+}
+
+.problema-card p{
+    margin:4px 0 0;
+    font-size:12px;
+    color:#6b7280;
+}
+
+.problema-card textarea{
+    width:100%;
+    min-height:80px;
+    border:1px solid #d6dbe1;
+    border-radius:8px;
+    resize:vertical;
+}
+
+.tabla-procesos{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.tabla-procesos th{
+    background:#ede5ff;
+    color:#6e42c1;
+    padding:12px;
+}
+
+.tabla-procesos td{
+    border:1px solid #e5e7eb;
+    padding:8px;
+}
+
+.tabla-procesos input,
+.tabla-procesos select{
+    width:100%;
+}
+
+.leyenda-impactos{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:16px;
+    font-size:14px;
+}
+
+.nuevo{
+    color:#17a34a;
+}
+
+.modificacion{
+    color:#7c3aed;
+}
+
+.eliminacion{
+    color:#f59e0b;
+}
+
+.consulta{
+    color:#1d4ed8;
+}
