@@ -120,3 +120,101 @@ body{
     color:#667085;
     outline:none;
 }
+.seccion-card{
+    background:white;
+    margin:12px;
+    padding:16px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+}
+
+.seccion-titulo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:16px;
+}
+
+.seccion-letra{
+    width:30px;
+    height:30px;
+    border-radius:6px;
+    background:#13b5bf;
+    color:white;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.seccion-titulo h2{
+    margin:0;
+    font-size:28px;
+    color:#13b5bf;
+    font-weight:700;
+}
+
+.informacion-general{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    border:1px solid #edf0f2;
+    border-radius:8px;
+    padding:18px;
+}
+
+.columna{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.columna:first-child{
+    border-right:1px solid #edf0f2;
+    padding-right:24px;
+}
+
+.campo{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+}
+
+.campo label{
+    width:220px;
+    font-size:14px;
+    font-weight:600;
+    color:#334155;
+}
+
+.campo input{
+    flex:1;
+    height:38px;
+    border:1px solid #e5e7eb;
+    border-radius:6px;
+    padding:0 12px;
+    font-size:14px;
+}
+
+.tipo-iniciativa{
+    align-items:flex-start;
+}
+
+.opciones-tipo{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.opcion{
+    display:flex !important;
+    align-items:center;
+    gap:8px;
+    width:auto !important;
+    padding:10px 14px;
+    border:1px solid #dbe1e8;
+    border-radius:8px;
+    background:white;
+    cursor:pointer;
+}
