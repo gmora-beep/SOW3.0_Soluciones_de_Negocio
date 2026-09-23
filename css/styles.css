@@ -123,7 +123,7 @@ body{
 .seccion-card{
     background:white;
     margin:12px;
-    padding:16px;
+    padding:12px 16px 14px 16px;
     border-radius:10px;
     border:1px solid #e5e7eb;
 }
@@ -131,27 +131,31 @@ body{
 .seccion-titulo{
     display:flex;
     align-items:center;
-    gap:14px;
-    margin-bottom:16px;
+    gap:12px;
+    margin-bottom:8px;
 }
 
 .seccion-letra{
-    width:30px;
-    height:30px;
+    width:32px;
+    height:32px;
     border-radius:6px;
     background:#13b5bf;
     color:white;
+    font-size:18px;
     font-weight:700;
     display:flex;
     align-items:center;
     justify-content:center;
+    font-family:'Segoe UI', sans-serif;
+    line-height:1;
 }
 
 .seccion-titulo h2{
     margin:0;
-    font-size:28px;
+    font-size:20px;
     color:#13b5bf;
     font-weight:700;
+    letter-spacing:.3px;
 }
 
 .informacion-general{
