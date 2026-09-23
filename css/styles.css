@@ -546,3 +546,43 @@ body{
 
     border-color:#2563eb;
 }
+.seccion-f h2{
+    color:#c2185b;
+}
+
+.seccion-f .seccion-letra{
+    background:#c2185b;
+}
+.tabla-hu{
+    width:100%;
+    border-collapse:collapse;
+}
+.tabla-hu th{
+    background:#c2185b;
+    color:white;
+    padding:12px;
+    font-size:13px;
+}
+.tabla-hu td{
+    border:1px solid #f3d2e3;
+    vertical-align:top;
+    padding:12px;
+}
+.hu-id{
+    font-weight:700;
+    color:#c2185b;
+}
+.hu-texto,
+.hu-criterios{
+    width:100%;
+    min-height:90px;
+
+    border:none;
+    resize:vertical;
+
+    background:transparent;
+    outline:none;
+
+    font-size:14px;
+    font-family:inherit;
+}
