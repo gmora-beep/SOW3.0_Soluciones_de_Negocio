@@ -650,16 +650,37 @@ body{
     display:flex;
     align-items:center;
 }
-.btn-pdf{
-    background:#2563eb;
+.acciones-finales{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin:24px 12px 40px;
+}
+.btn-guardar{
+    background:#14b8a6;
     color:white;
     border:none;
     border-radius:8px;
-    padding:10px 14px;
+    padding:10px 18px;
     font-size:14px;
     font-weight:600;
     cursor:pointer;
+    transition:.2s;
+}
+.btn-guardar:hover{
+    background:#0f9f8d;
+}
+.btn-pdf{
+    background:white;
+    color:#2563eb;
+    border:1px solid #2563eb;
+    border-radius:8px;
+    padding:10px 18px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.2s;
 }
 .btn-pdf:hover{
-    background:#1d4ed8;
+    background:#eff6ff;
 }
