@@ -6,8 +6,10 @@
     <title>SOW - Solicitud de Iniciativa</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/.10.1/html2pdf.bundle.min.jsscript>
 </head>
 <body>
+<div id="sow-documento">
     <div class="header">    
         <div class="logo-circulo"></div>    
         <div>
@@ -649,6 +651,34 @@ document.addEventListener("DOMContentLoaded", () => {
         "fecha-actual"
     ).textContent = fechaFormateada;
 });
+function exportarPDF(){
+    const elemento =
+        document.getElementById(
+            "sow-documento"
+        );
+    const opciones = {
+        margin: 10,
+        filename:
+            'SOW.pdf',
+        image: {
+            type: 'jpeg',
+            quality: 1
+        },
+        html2canvas: {
+            scale: 2
+        },
+        jsPDF: {
+            unit: 'mm',
+            format: 'a4',
+            orientation: 'portrait'
+        }
+    };
+    html2pdf()
+        .set(opciones)
+        .from(elemento)
+        .save();
+}
+</div>
 </script>
 </body>
 </html>
