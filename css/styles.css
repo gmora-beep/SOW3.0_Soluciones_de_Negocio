@@ -691,3 +691,17 @@ body{
 .btn-pdf .material-symbols-outlined{
     font-size:18px;
 }
+.seccion-card{
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+.beneficio-card{
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+.tabla-hu{
+    page-break-inside: avoid;
+}
+.tabla-necesidades{
+    page-break-inside: avoid;
+}
