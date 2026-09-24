@@ -667,6 +667,10 @@ function exportarPDF(){
         },
         html2canvas: {
             scale: 2
+            scrollY: 0
+        },
+        pagebreak: {
+            mode: ['avoid-all', 'css', 'legacy']
         },
         jsPDF: {
             unit: 'mm',
