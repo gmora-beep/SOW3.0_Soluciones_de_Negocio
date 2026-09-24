@@ -655,8 +655,18 @@ document.addEventListener("DOMContentLoaded", () => {
 function exportarPDF(){
     const acciones =
         document.querySelector(
-            ".acciones-finales"
+            ".acciones-finales, .acciones-tabla"
         );
+    acciones.forEach(
+        a => a.classList.add(
+            "pdf-hidden"
+        )
+    );
+    acciones.forEach(
+        a => a.classList.remove(
+            "pdf-hidden"
+        )
+    );
     acciones.classList.add(
         "pdf-hidden"
     );
@@ -677,7 +687,7 @@ function exportarPDF(){
         },
         jsPDF: {
             unit: 'mm',
-            format: 'a4',
+            format: 'a3',
             orientation: 'landscape'
         }
     };
