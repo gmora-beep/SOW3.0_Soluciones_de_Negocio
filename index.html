@@ -42,14 +42,6 @@
         <span id="fecha-actual"></span>
     </div>
 </div>
-<div class="acciones-header">
-    <button
-        type="button"
-        class="btn-pdf"
-        onclick="exportarPDF()">
-        🖨️ Exportar PDF
-    </button>
-</div>
 </div>
 <div class="seccion-card">
     <div class="seccion-titulo">
@@ -515,6 +507,25 @@
             ＋ Agregar HU
         </button>
     </div>
+</div>
+<div class="acciones-finales">
+    <button
+        type="button"
+        class="btn-guardar">
+        <span class="material-symbols-outlined">
+            save
+        </span>
+        Guardar borrador
+    </button>
+    <button
+        type="button"
+        class="btn-pdf"
+        onclick="exportarPDF()">
+        <span class="material-symbols-outlined">
+            picture_as_pdf
+        </span>
+        Exportar PDF
+    </button>
 </div>
 <script>
 function agregarBeneficioCuantitativo(){
