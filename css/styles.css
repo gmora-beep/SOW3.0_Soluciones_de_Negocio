@@ -705,3 +705,6 @@ body{
 .tabla-necesidades{
     page-break-inside: avoid;
 }
+.pdf-hidden{
+    display:none !important;
+}
