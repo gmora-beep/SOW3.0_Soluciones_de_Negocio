@@ -666,6 +666,9 @@ body{
     font-weight:600;
     cursor:pointer;
     transition:.2s;
+    display:flex;
+    align-items:center;
+    gap:8px;
 }
 .btn-guardar:hover{
     background:#0f9f8d;
@@ -683,4 +686,8 @@ body{
 }
 .btn-pdf:hover{
     background:#eff6ff;
+}
+.btn-guardar .material-symbols-outlined,
+.btn-pdf .material-symbols-outlined{
+    font-size:18px;
 }
