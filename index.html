@@ -654,21 +654,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 function exportarPDF(){
     const acciones =
-        document.querySelector(
+        document.querySelectorAll(
             ".acciones-finales, .acciones-tabla"
         );
     acciones.forEach(
         a => a.classList.add(
             "pdf-hidden"
         )
-    );
-    acciones.forEach(
-        a => a.classList.remove(
-            "pdf-hidden"
-        )
-    );
-    acciones.classList.add(
-        "pdf-hidden"
     );
     const elemento =
         document.getElementById(
@@ -696,12 +688,13 @@ function exportarPDF(){
         .from(elemento)
         .save()
         .then(() => {
-            acciones.classList.remove(
-                "pdf-hidden"
+            acciones.forEach(
+                a => a.classList.remove(
+                    "pdf-hidden"
+                )
             );
         });
 }
-``
 </script>
 </body>
 </html>
