@@ -646,3 +646,20 @@ body{
     font-weight:700;
     color:#1e293b;
 }
+.acciones-header{
+    display:flex;
+    align-items:center;
+}
+.btn-pdf{
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:10px 14px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+}
+.btn-pdf:hover{
+    background:#1d4ed8;
+}
