@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="sow-documento">
-    <div class="header">    
+    <div class="header pdf-header">    
         <div class="logo-circulo"></div>    
         <div>
             <div class="titulo-header">
@@ -21,7 +21,7 @@
             </div>
         </div>    
     </div>
-<div class="sow-banner">
+<div class="sow-banner pdf-banner">
     <div class="sow-banner-left">
         <div class="sow-icon">
             SN
@@ -657,6 +657,15 @@ function exportarPDF(){
         document.querySelectorAll(
             ".acciones-finales, .acciones-tabla"
         );
+    const encabezados =
+        document.querySelectorAll(
+            ".pdf-header, .pdf-banner"
+        );
+        encabezados.forEach(
+        e => e.classList.add(
+            "pdf-hidden"
+        )
+    );
     acciones.forEach(
         a => a.classList.add(
             "pdf-hidden"
