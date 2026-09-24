@@ -653,14 +653,20 @@ document.addEventListener("DOMContentLoaded", () => {
     ).textContent = fechaFormateada;
 });
 function exportarPDF(){
+    const acciones =
+        document.querySelector(
+            ".acciones-finales"
+        );
+    acciones.classList.add(
+        "pdf-hidden"
+    );
     const elemento =
         document.getElementById(
             "sow-documento"
         );
     const opciones = {
         margin: 10,
-        filename:
-            'SOW.pdf',
+        filename: 'SOW.pdf',
         image: {
             type: 'jpeg',
             quality: 1
@@ -668,9 +674,6 @@ function exportarPDF(){
         html2canvas: {
             scale: 2,
             scrollY: 0
-        },
-        pagebreak: {
-            mode: ['avoid-all', 'css', 'legacy']
         },
         jsPDF: {
             unit: 'mm',
@@ -681,8 +684,14 @@ function exportarPDF(){
     html2pdf()
         .set(opciones)
         .from(elemento)
-        .save();
+        .save()
+        .then(() => {
+            acciones.classList.remove(
+                "pdf-hidden"
+            );
+        });
 }
+``
 </script>
 </body>
 </html>
