@@ -697,13 +697,17 @@ function exportarPDF(){
         .from(elemento)
         .save()
         .then(() => {
-            acciones.forEach(
+                acciones.forEach(
                 a => a.classList.remove(
                     "pdf-hidden"
                 )
             );
+                encabezados.forEach(
+                e => e.classList.remove(
+                    "pdf-hidden"
+                )
+            );    
         });
-}
 </script>
 </body>
 </html>
