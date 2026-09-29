@@ -40,45 +40,54 @@
                 Soluciones de Negocio
             </div>    
         <nav class="menu-principal">
-            <a href="#" class="nav-icon">
+            <div id="menuContenido">
+                <a href="#" class="nav-icon">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <span class="menu-texto">
+                        Home
+                    </span>
+                </a>
+                <a href="#" class="nav-icon activo">
+                    <span class="material-symbols-outlined">
+                        description
+                    </span>
+                    <span class="menu-texto">
+                        Nuevo SOW
+                    </span>
+                </a>
+                <a href="#" class="nav-icon">
+                    <span class="material-symbols-outlined">
+                        history
+                    </span>
+                    <span class="menu-texto">
+                        Historial
+                    </span>
+                </a>
+                <a href="#" class="nav-icon">
+                    <span class="material-symbols-outlined">
+                        admin_panel_settings
+                    </span>
+                    <span class="menu-texto">
+                        Administración
+                    </span>
+                </a>
+                <div class="menu-separador"></div>
+                <a href="#" class="nav-login">
+                    <span class="material-symbols-outlined">
+                        login
+                    </span>
+                    <span>
+                        Ingresar
+                    </span>
+                </a>
+            </div>
+            <a href="#"
+               id="btnMenu"
+               class="nav-icon">
                 <span class="material-symbols-outlined">
-                    home
-                </span>
-                <span class="menu-texto">
-                    Home
-                </span>
-            </a>
-            <a href="#" class="nav-icon activo">
-                <span class="material-symbols-outlined">
-                    description
-                </span>
-                <span class="menu-texto">
-                    Nuevo SOW
-                </span>
-            </a>
-            <a href="#" class="nav-icon">
-                <span class="material-symbols-outlined">
-                    history
-                </span>
-                <span class="menu-texto">
-                    Historial
-                </span>
-            </a>
-            <a href="#" class="nav-icon">
-                <span class="material-symbols-outlined">
-                    admin_panel_settings
-                </span>
-                <span class="menu-texto">
-                    Administración
-                </span>
-            </a>
-            <div class="menu-separador"></div>
-            <a href="#" class="nav-login">
-                <span class="material-symbols-outlined">
-                    login
-                </span>
-                <span>
-                    Ingresar
+                    menu
                 </span>
             </a>
         </nav>
@@ -771,6 +780,14 @@ function exportarPDF(){
             );    
         });
     }
+document
+    .getElementById("btnMenu")
+    .addEventListener("click", function(e){
+        e.preventDefault();
+        document
+            .querySelector(".menu-principal")
+            .classList.toggle("colapsado");
+    });
 </script>
 </body>
 </html>
