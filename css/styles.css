@@ -804,9 +804,9 @@ body{
     font-family:"Poppins",sans-serif;
     font-size:13px;
     font-weight:500;
-    padding:0 4px;
+    padding:0 6px;
     position:relative;
-    top:3px;
+    top:30px;
 }
 .nav-login:hover{
     color:#13d3d8;
