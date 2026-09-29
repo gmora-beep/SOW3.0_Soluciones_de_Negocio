@@ -777,6 +777,10 @@ body{
     font-weight:500;
     transition:.25s ease;
 }
+.menu-principal.expandido .menu-texto{
+    max-width:120px;
+    opacity:1;
+}
 .menu-separador{
     width:1px;
     height:24px;
@@ -813,4 +817,12 @@ body{
 .nav-login .material-symbols-outlined{
     font-size:12px;
     line-height:1;
+}
+#menuContenido{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.menu-principal.colapsado #menuContenido{
+    display:none;
 }
