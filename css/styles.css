@@ -806,7 +806,7 @@ body{
     font-weight:500;
     padding:0 6px;
     position:relative;
-    top:0;
+    top:-1;px
 }
 .nav-login:hover{
     color:#13d3d8;
