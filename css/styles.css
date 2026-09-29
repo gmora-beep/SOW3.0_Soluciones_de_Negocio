@@ -706,28 +706,14 @@ body{
     display:flex;
     align-items:center;
     gap:10px;
-    padding:10px 12px;
-    border-radius:22px;
-    background:rgba(
-        255,
-        255,
-        255,
-        .08
-    );
-    backdrop-filter:blur(16px);
-    border:1px solid rgba(
-        255,
-        255,
-        255,
-        .10
-    );
+    margin-left:auto;
+    padding:12px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:24px;
+    backdrop-filter:blur(12px);
     box-shadow:
-        0 8px 24px rgba(
-            0,
-            0,
-            0,
-            .15
-        );
+        0 8px 20px rgba(0,0,0,.15);
 }
 .menu-item{
     text-decoration:none;
@@ -750,12 +736,12 @@ body{
     display:flex;
     align-items:center;
     gap:8px;
-    margin-left:12px;
-    padding:10px 14px;
-    color:white;
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.10);
+    padding:10px 16px;
     border-radius:14px;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.08);
+    color:white;
+    cursor:pointer;
 }
 .acceso-usuario:hover{
     background:rgba(255,255,255,.12);
@@ -765,8 +751,8 @@ body{
 }
 .nav-icon{
     position:relative;
-    width:46px;
-    height:46px;
+    width:48px;
+    height:48px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -780,24 +766,28 @@ body{
 }
 .nav-icon.activo{
     background:white;
-    color:#01244a;
+    color:#0a3f63;
     box-shadow:
-        0 2px 8px rgba(
-            0,
-            0,
-            0,
-            .15
-        );
+        0 2px 8px rgba(0,0,0,.12);
 }
 .nav-icon .material-symbols-outlined{
     font-size:24px;
 }
 .tooltip{
+    position:absolute;
     bottom:-42px;
+    left:50%;
+    transform:translateX(-50%);
     background:#111827;
-    border-radius:10px;
-    padding:8px 12px;
+    color:white;
+    padding:6px 10px;
+    border-radius:8px;
     font-size:12px;
+    white-space:nowrap;
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:.2s;
 }
 .menu-separador{
     width:1px;
@@ -808,4 +798,8 @@ body{
         255,
         .15
     );
+}
+.nav-icon:hover .tooltip{
+    opacity:1;
+    visibility:visible;
 }
