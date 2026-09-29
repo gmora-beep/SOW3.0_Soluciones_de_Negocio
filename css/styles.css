@@ -704,7 +704,7 @@ body{
 }
 .menu-principal{
     position:relative;
-    top:2px;
+    top:16px;
     display:flex;
     align-items:flex-end;
     gap:8px;
