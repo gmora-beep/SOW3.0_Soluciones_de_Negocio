@@ -702,3 +702,43 @@ body{
 .pdf-hidden{
     display:none !important;
 }
+.menu-principal{
+    display:flex;
+    gap:28px;
+    margin-left:20px;
+    flex:1;
+}
+.menu-item{
+    color:white;
+    text-decoration:none;
+    font-family:"Poppins",sans-serif;
+    font-size:15px;
+    font-weight:500;
+    padding:8px 0;
+    transition:.2s;
+}
+.menu-item:hover{
+    color:#13d3d8;
+}
+.menu-item.activo{
+    color:#13d3d8;
+    border-bottom:2px solid #13d3d8;
+}
+.acceso-usuario{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:white;
+    padding:8px 14px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:10px;
+    cursor:pointer;
+    transition:.2s;
+    font-family:"Poppins",sans-serif;
+}
+.acceso-usuario:hover{
+    background:rgba(255,255,255,.12);
+}
+.acceso-usuario .material-symbols-outlined{
+    font-size:22px;
+}
