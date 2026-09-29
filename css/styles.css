@@ -704,7 +704,7 @@ body{
 }
 .menu-principal{
     position:relative;
-    top:6px;
+    top:2px;
     display:flex;
     align-items:flex-end;
     gap:8px;
@@ -806,7 +806,7 @@ body{
     font-weight:500;
     padding:0 6px;
     position:relative;
-    top:30px;
+    top:0;
 }
 .nav-login:hover{
     color:#13d3d8;
