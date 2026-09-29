@@ -12,7 +12,7 @@ body{
         #11566b 100%
     );
     color:white;
-    padding:16px 28px;
+    padding:22px 28px;
     display:flex;
     align-items:center;
     gap:20px;
@@ -704,10 +704,10 @@ body{
 }
 .menu-principal{
     display:flex;
-    align-items:center;
+    align-items:flex-end;
     gap:8px;
     margin-left:auto;
-    padding:8px;
+    padding:8px 10px;
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.12);
     border-radius:18px;
@@ -735,8 +735,8 @@ body{
 }
 .nav-icon{
     position:relative;
-    width:36px;
-    height:36px;
+    width:30px;
+    height:30px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -754,10 +754,23 @@ body{
     box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
 .nav-icon .material-symbols-outlined{
-    font-size:px;
+    font-size:14px;
 }
 .tooltip{
-    display:none;
+    position:absolute;
+    top:42px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#111827;
+    color:white;
+    padding:6px 10px;
+    border-radius:8px;
+    font-size:11px;
+    white-space:nowrap;
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:.2s;
 }
 .menu-separador{
     width:1px;
