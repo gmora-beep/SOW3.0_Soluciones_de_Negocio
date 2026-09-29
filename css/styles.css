@@ -738,17 +738,23 @@ body{
     font-size:15px;
 }
 .nav-icon{
-    position:relative;
-    top:2px;
-    width:26px;
-    height:26px;
     display:flex;
     align-items:center;
-    justify-content:center;
-    border-radius:8px;
+    gap:6px;
+    height:30px;
+    padding:0 8px;
+    border-radius:10px;
     color:white;
     text-decoration:none;
-    transition:.2s;
+    transition:.25s;
+}
+.nav-icon:hover .menu-texto{
+    max-width:120px;
+    opacity:1;
+}
+.nav-icon.activo .menu-texto{
+    max-width:120px;
+    opacity:1;
 }
 .nav-icon:hover{
     background:rgba(255,255,255,.12);
@@ -761,21 +767,15 @@ body{
 .nav-icon .material-symbols-outlined{
     font-size:14px;
 }
-.tooltip{
-    position:absolute;
-    top:42px;
-    left:50%;
-    transform:translateX(-50%);
-    background:#111827;
-    color:white;
-    padding:6px 10px;
-    border-radius:8px;
-    font-size:11px;
+.menu-texto{
+    max-width:0;
+    overflow:hidden;
     white-space:nowrap;
     opacity:0;
-    visibility:hidden;
-    pointer-events:none;
-    transition:.2s;
+    font-family:"Poppins",sans-serif;
+    font-size:12px;
+    font-weight:500;
+    transition:.25s ease;
 }
 .menu-separador{
     width:1px;
@@ -786,10 +786,6 @@ body{
         255,
         .15
     );
-}
-.nav-icon:hover .tooltip{
-    opacity:1;
-    visibility:visible;
 }
 .menu-separador{
     width:1px;
