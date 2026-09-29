@@ -798,6 +798,7 @@ body{
 .nav-login{
     display:flex;
     align-items:center;
+    height:30px;
     gap:4px;
     color:white;
     text-decoration:none;
@@ -805,8 +806,6 @@ body{
     font-size:13px;
     font-weight:500;
     padding:0 6px;
-    position:relative;
-    top:-1;px
 }
 .nav-login:hover{
     color:#13d3d8;
