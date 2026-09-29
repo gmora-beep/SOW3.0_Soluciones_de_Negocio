@@ -704,36 +704,42 @@ body{
 }
 .menu-principal{
     display:flex;
-    gap:28px;
+    align-items:center;
+    gap:8px;
     margin-left:auto;
+    padding:6px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:18px;
+    backdrop-filter:blur(10px);
 }
 .menu-item{
-    color:white;
     text-decoration:none;
+    color:#dfe7ef;
     font-family:"Poppins",sans-serif;
-    font-size:15px;
+    font-size:14px;
     font-weight:500;
-    padding:8px 0;
+    padding:10px 16px;
+    border-radius:12px;
     transition:.2s;
 }
 .menu-item:hover{
-    color:#13d3d8;
+    background:rgba(255,255,255,.10);
 }
 .menu-item.activo{
-    color:#13d3d8;
-    border-bottom:2px solid #13d3d8;
+    background:white;
+    color:#01244a;
 }
 .acceso-usuario{
     display:flex;
     align-items:center;
     gap:8px;
+    margin-left:12px;
+    padding:10px 14px;
     color:white;
-    padding:8px 14px;
-    border:1px solid rgba(255,255,255,.25);
-    border-radius:10px;
-    cursor:pointer;
-    transition:.2s;
-    font-family:"Poppins",sans-serif;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:14px;
 }
 .acceso-usuario:hover{
     background:rgba(255,255,255,.12);
