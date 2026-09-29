@@ -711,6 +711,7 @@ body{
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.12);
     border-radius:18px;
+    backdrop-filter:blur(12px);
 }
 
 
@@ -735,12 +736,13 @@ body{
 }
 .nav-icon{
     position:relative;
-    width:30px;
-    height:30px;
+    top:2px;
+    width:26px;
+    height:26px;
     display:flex;
     align-items:center;
     justify-content:center;
-    border-radius:10px;
+    border-radius:8px;
     color:white;
     text-decoration:none;
     transition:.2s;
@@ -751,7 +753,7 @@ body{
 .nav-icon.activo{
     background:white;
     color:#0a3f63;
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    box-shadow:0 2px 6px rgba(0,0,0,.12);
 }
 .nav-icon .material-symbols-outlined{
     font-size:14px;
