@@ -19,27 +19,24 @@ body{
     box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
 
-.logo-circulo{
-    width:22px;
-    height:22px;
-    border:5px solid white;
-    border-right-color:transparent;
-    border-radius:50%;
+.logo-sn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:56px;
+    height:56px;
     flex-shrink:0;
-    margin-top:2px;
 }
 
 .titulo-header{
-    font-size:18px;
+    font-size:32px;
     font-weight:700;
-    line-height:1.1;
     color:white;
-}
-
-.subtitulo-header{
-    margin-top:4px;
-    color:#13D3D8;
-    font-size:13px;
+    letter-spacing:.3px;
+    font-family:
+        "Segoe UI",
+        "Inter",
+        sans-serif;
 }
 
 .contenido{
