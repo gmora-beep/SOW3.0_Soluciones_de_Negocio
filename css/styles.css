@@ -793,10 +793,12 @@ body{
 }
 .menu-separador{
     width:1px;
-    height:20px;
+    height:16px;
     background:rgba(255,255,255,.20);
-    margin:0 4px;
+    margin-left:2px;
+    margin-right:4px;
 }
+
 .nav-login{
     display:flex;
     align-items:center;
@@ -810,4 +812,8 @@ body{
 }
 .nav-login:hover{
     color:#13d3d8;
+}
+.nav-login .material-symbols-outlined{
+    font-size:12px;
+    line-height:1;
 }
