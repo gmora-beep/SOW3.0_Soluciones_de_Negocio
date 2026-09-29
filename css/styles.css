@@ -791,3 +791,23 @@ body{
     opacity:1;
     visibility:visible;
 }
+.menu-separador{
+    width:1px;
+    height:20px;
+    background:rgba(255,255,255,.20);
+    margin:0 4px;
+}
+.nav-login{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:white;
+    text-decoration:none;
+    font-family:"Poppins",sans-serif;
+    font-size:13px;
+    font-weight:500;
+    padding:4px 8px;
+}
+.nav-login:hover{
+    color:#13d3d8;
+}
