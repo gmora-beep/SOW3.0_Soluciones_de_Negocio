@@ -826,3 +826,12 @@ body{
 .menu-principal.colapsado #menuContenido{
     display:none;
 }
+.nav-hamburguesa{
+    width:40px;
+    height:40px;
+    border-radius:12px;
+    background:rgba(255,255,255,.10);
+}
+.nav-hamburguesa .material-symbols-outlined{
+    font-size:22px;
+}
