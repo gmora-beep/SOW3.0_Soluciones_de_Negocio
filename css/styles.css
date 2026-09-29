@@ -705,8 +705,7 @@ body{
 .menu-principal{
     display:flex;
     gap:28px;
-    margin-left:20px;
-    flex:1;
+    margin-left:auto;
 }
 .menu-item{
     color:white;
