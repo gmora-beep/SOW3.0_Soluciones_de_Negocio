@@ -703,6 +703,8 @@ body{
     display:none !important;
 }
 .menu-principal{
+    position:relative;
+    top:6px;
     display:flex;
     align-items:flex-end;
     gap:8px;
@@ -718,10 +720,11 @@ body{
 .acceso-usuario{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:6px;
+    font-size:13px;
     margin-left:16px;
-    padding:12px 18px;
-    border-radius:16px;
+    padding:6px 12px;
+    border-radius:10px;
     border:1px solid rgba(255,255,255,.12);
     background:rgba(255,255,255,.08);
     color:white;
@@ -732,7 +735,7 @@ body{
     background:rgba(255,255,255,.12);
 }
 .acceso-usuario .material-symbols-outlined{
-    font-size:22px;
+    font-size:15px;
 }
 .nav-icon{
     position:relative;
