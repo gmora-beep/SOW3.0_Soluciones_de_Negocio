@@ -705,13 +705,13 @@ body{
 .menu-principal{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:12px;
     margin-left:auto;
-    padding:6px;
+    padding:10px 12px;
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.10);
-    border-radius:18px;
-    backdrop-filter:blur(10px);
+    border-radius:24px;
+    backdrop-filter:blur(12px);
 }
 .menu-item{
     text-decoration:none;
@@ -746,4 +746,41 @@ body{
 }
 .acceso-usuario .material-symbols-outlined{
     font-size:22px;
+}
+.nav-icon{
+    position:relative;
+    width:46px;
+    height:46px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:14px;
+    color:white;
+    text-decoration:none;
+    transition:.25s;
+}
+.nav-icon:hover{
+    background:rgba(255,255,255,.12);
+}
+.nav-icon.activo{
+    background:white;
+    color:#01244a;
+}
+.nav-icon .material-symbols-outlined{
+    font-size:24px;
+}
+.tooltip{
+    position:absolute;
+    bottom:-38px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#0f172a;
+    color:white;
+    padding:6px 10px;
+    border-radius:8px;
+    font-size:12px;
+    white-space:nowrap;
+    opacity:0;
+    pointer-events:none;
+    transition:.2s;
 }
