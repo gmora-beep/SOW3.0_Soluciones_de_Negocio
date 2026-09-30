@@ -822,7 +822,12 @@ body{
     display:flex;
     align-items:center;
     gap:8px;
-    transition:.35s ease;
+    max-width:1000px;
+    overflow:hidden;
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        max-width .35s ease;
 }
 
 .nav-hamburguesa{
@@ -841,9 +846,13 @@ body{
     font-weight:700;
 }
 .hidden{
-    width:0;
     opacity:0;
+    visibility:hidden;
+    max-width:0;
     overflow:hidden;
     transform:translateX(10px);
-    transition:.35s ease;
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        max-width .35s ease;
 }
