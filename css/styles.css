@@ -876,8 +876,8 @@ body.page-exit{
     height:calc(100vh - 95px);
     background-image:
         url("../images/Designer (34).png");
-    background-size:cover;
-    background-position:center;
+    background-size:100% auto;
+    background-position:center top;
     background-repeat:no-repeat;
     padding:24px;
 }
