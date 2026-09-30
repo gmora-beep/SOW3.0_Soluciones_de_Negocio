@@ -17,11 +17,13 @@ function cargarVista(vista){
                     )
                 );
             if(vista === "home"){
+                document.body.style.overflow = "hidden";
                 document
                     .getElementById("menu-home")
                     ?.classList.add("activo");
                 }
             if(vista === "nuevo-sow"){
+                document.body.style.overflow = "auto";
                 document
                     .getElementById("menu-sow")
                     ?.classList.add("activo");
