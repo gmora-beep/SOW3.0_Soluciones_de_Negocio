@@ -719,7 +719,7 @@ body{
 }
 .menu-principal.menu-colapsado{
     padding:8px;
-    width:auto;
+    width:60px;
 }
 .acceso-usuario{
     display:flex;
@@ -822,7 +822,6 @@ body{
     transition:
         opacity .20s ease,
         transform .20s ease,
-        max-width .20s ease;
 }
 
 .nav-hamburguesa{
@@ -843,7 +842,6 @@ body{
 .hidden{
     opacity:0;
     visibility:hidden;
-    max-width:0;
-    overflow:hidden;    
     transform:translateX(10px);
+    pointer-events:none;
 }
