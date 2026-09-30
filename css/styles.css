@@ -930,7 +930,7 @@ body.page-exit{
     display:flex;
     justify-content:flex-end;
     gap:12px;
-    margin-top:20px;
+    margin-top:auto;
 }
 .home-action{
     display:flex;
@@ -958,7 +958,7 @@ body.page-exit{
 }
 .home-action::before{
     content:"";
-    position:absolute;
+    position:relative;
     left:0;
     top:0;
     width:0;
@@ -966,6 +966,8 @@ body.page-exit{
     background:#13b5bf;
     transition:.30s ease;
     z-index:0;
+    overflow:hidden;
+    border-radius:16px;
 }
 .home-action:hover::before{
     width:100%;
