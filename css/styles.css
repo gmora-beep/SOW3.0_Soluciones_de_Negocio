@@ -822,7 +822,9 @@ body{
     display:flex;
     align-items:center;
     gap:8px;
+    transition:.35s ease;
 }
+
 .menu-principal.colapsado #menuContenido{
     display:none;
 }
@@ -842,8 +844,9 @@ body{
     font-weight:700;
 }
 .hidden{
+    width:0;
     opacity:0;
-    visibility:hidden;
-    transform:translateY(-8px) scale(.95);
+    overflow:hidden;
+    transform:translateX(10px);
     transition:.35s ease;
 }
