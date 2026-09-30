@@ -892,9 +892,9 @@ body.page-exit{
 }
 .home-message h1{
     color:white;
-    font-size:32px;
+    font-size:30px;
     font-weight:700;
-    line-height:1.15;
+    line-height:1.1;
     margin:0;
     max-width:850px;
 }
@@ -992,7 +992,7 @@ body.page-exit{
     align-items:center;
     gap:12px;
     align-self:flex-end;
-    margin-top:-10px;
+    margin-top:10px;
 }
 .quote-mark{
     color:#ff8a00;
@@ -1028,7 +1028,7 @@ body.page-exit{
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    margin-bottom:0;
+    margin-bottom:-15px;
 }
 .icon-circle{
     width:48px;
