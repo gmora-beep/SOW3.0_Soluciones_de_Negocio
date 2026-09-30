@@ -896,13 +896,8 @@ body.page-exit{
     color:white;
     font-size:52px;
     font-weight:700;
+    line-height:1.15;
     margin:0;
-}
-.home-message h2{
-    color:white;
-    font-size:32px;
-    font-weight:500;
-    margin-top:8px;
 }
 .home-cards{
     display:grid;
