@@ -816,9 +816,9 @@ body{
     overflow:hidden;
     opacity:1;
     transition:
-        opacity .35s ease,
-        transform .35s ease,
-        max-width .35s ease;
+        opacity .20s ease,
+        transform .20s ease,
+        max-width .20s ease;
 }
 
 .nav-hamburguesa{
@@ -842,8 +842,4 @@ body{
     max-width:0;
     overflow:hidden;    
     transform:translateX(10px);
-    transition:
-        opacity .35s ease,
-        transform .35s ease,
-        max-width .35s ease;
 }
