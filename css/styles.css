@@ -890,7 +890,7 @@ body.page-exit{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    padding:40px;
+    padding:30px;
 }
 .home-message h1{
     color:white;
@@ -906,13 +906,18 @@ body.page-exit{
         repeat(3,1fr);
     gap:16px;
     margin-top:10px;
+    height:160px;
 }
 .info-card{
-    padding:16px 20px;
-    height:180px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.10);
     border-radius:20px;
+    padding:16px 20px;
+    height:160px;
     display:flex;
     flex-direction:column;
+    color:white;
 }
 .info-card .material-symbols-outlined{
     font-size:42px;
@@ -920,7 +925,8 @@ body.page-exit{
 }
 .info-card h3{
     margin:0;
-    font-size:20px;
+    color:white;
+    font-size:18px;
     font-weight:700;
     line-height:1.15;
 }
@@ -1032,6 +1038,9 @@ body.page-exit{
     min-height:48px;
     border-radius:50%;
     flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .icon-circle.orange{
     background:#ff8a00;
@@ -1051,9 +1060,6 @@ body.page-exit{
     align-items:center;
     gap:14px;
     min-height:56px;
-}
-.card-header h3{
-    margin-top:6px;
 }
 .card-line{
     width:40px;
