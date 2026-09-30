@@ -903,7 +903,6 @@ body.page-exit{
     grid-template-columns:
         repeat(3,1fr);
     gap:12px;
-    margin-top:10px;
 }
 .info-card{
     background:rgba(255,255,255,.08);
@@ -1017,12 +1016,11 @@ body.page-exit{
 }
 .home-tags{
     margin-top:10px;
-    margin-bottom:0px;
+    margin-bottom:18px;
     color:white;
     font-size:13px;
     letter-spacing:5px;
     opacity:.9;
-    margin-bottom:0;
 }
 .home-header-content{
     display:flex;
