@@ -723,11 +723,9 @@ body{
 }
 .menu-principal.menu-colapsado{
     width:56px;
-    padding:8px 0;
-    justify-content:center;
-    transition:
-        width .25s ease,
-        padding .25s ease;
+    padding:8px;
+    display:flex;
+    justify-content:flex-end;
 }
 .acceso-usuario{
     display:flex;
@@ -859,4 +857,7 @@ body{
 }
 .menu-principal.menu-colapsado .nav-hamburguesa{
     background:rgba(255,255,255,.18);
+}
+#menuContenido.hidden{
+    display:none;
 }
