@@ -780,20 +780,18 @@ function exportarPDF(){
             );    
         });
     }
-const menu =
-    document.getElementById(
-        "menuContenido"
-    );
-const contenedor =
-    document.querySelector(
-        ".menu-principal"
-    );
-menu.classList.toggle(
-    "hidden"
-);
-contenedor.classList.toggle(
-    "menu-colapsado"
-);
+document
+    .getElementById("btnMenu")
+    .addEventListener("click", function(e){
+        e.preventDefault();
+        document
+            .getElementById("menuContenido")
+            .classList.toggle("hidden");
+        document
+            .querySelector(".menu-principal")
+            .classList.toggle("menu-colapsado");
+    });
+
 </script>
 </body>
 </html>
