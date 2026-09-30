@@ -841,4 +841,9 @@ body{
     font-size:26px !important;
     font-weight:700;
 }
-
+.hidden{
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-8px) scale(.95);
+    transition:.35s ease;
+}
