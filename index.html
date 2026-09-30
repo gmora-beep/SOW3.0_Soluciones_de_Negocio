@@ -21,6 +21,9 @@ fetch("components/header.html")
         document
             .getElementById("header-container")
             .innerHTML = data;
+        document
+            .getElementById("menu-home")
+            ?.classList.add("activo");
         const btnMenu =
             document.getElementById("btnMenu");
         if(btnMenu){
