@@ -14,14 +14,6 @@
     <main>
         <h1>Bienvenido a Soluciones de Negocio</h1>
     </main>
-    <script>
-    fetch("components/header.html")
-        .then(response => response.text())
-        .then(data => {
-            document
-                .getElementById("header-container")
-                .innerHTML = data;
-        });
 <script>
 fetch("components/header.html")
     .then(response => response.text())
@@ -29,7 +21,24 @@ fetch("components/header.html")
         document
             .getElementById("header-container")
             .innerHTML = data;
+        const btnMenu =
+            document.getElementById("btnMenu");
+        if(btnMenu){
+            btnMenu.addEventListener(
+                "click",
+                function(e){
+                    e.preventDefault();
+                    document
+                        .getElementById("menuContenido")
+                        ?.classList.toggle("hidden");
+                    document
+                        .querySelector(".menu-principal")
+                        ?.classList.toggle("menu-colapsado");
+                }
+            );
+        }
     });
+
 </script>
 </body>
 </html>
