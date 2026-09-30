@@ -873,7 +873,7 @@ body.page-exit{
     transform:translateX(-24px);
 }
 .home-hero{
-    min-height:calc(100vh - 95px);
+    height:calc(100vh - 95px);
     background-image:
         url("../images/Designer (34).png");
     background-size:cover;
@@ -882,7 +882,7 @@ body.page-exit{
     padding:24px;
 }
 .home-overlay{
-    height:calc(100vh - 140px);
+    height:calc(100vh - 180px);
     border-radius:28px;
     background:rgba(15,40,70,.40);
     backdrop-filter:blur(12px);
