@@ -838,9 +838,9 @@ body{
 }
 .hidden{
     opacity:0;
-    max-width:0;
-    overflow:hidden;
     visibility:hidden;
+    max-width:0;
+    overflow:hidden;    
     transform:translateX(10px);
     transition:
         opacity .35s ease,
