@@ -1029,7 +1029,7 @@ body.page-exit{
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    margin-bottom:-35px;
+    margin-bottom:0;
 }
 .icon-circle{
     width:48px;
