@@ -1111,8 +1111,8 @@ body.page-exit{
 .historial-kpis{
     display:grid;
     grid-template-columns:
-        repeat(4,120px);
-    gap:10px;
+        repeat(4,130px);
+    gap:12px;
 }
 .kpi-card{
     background:rgba(255,255,255,.08);
@@ -1120,10 +1120,23 @@ body.page-exit{
     border:1px solid rgba(255,255,255,.10);
     border-radius:16px;
     padding:10px 14px;
-    min-height:70px;
+    color:white;
+}
+.kpi-top{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:8px;
+    margin-bottom:4px;
+}
+.kpi-top .material-symbols-outlined{
+    font-size:22px;
+    color:#13b5bf;
+}
+.kpi-top h2{
+    margin:0;
+    font-size:30px;
+    font-weight:700;
+    color:white;
 }
 .kpi-card h2{
     font-size:24px;
@@ -1132,6 +1145,8 @@ body.page-exit{
 .kpi-card p{
     margin:0;
     font-size:12px;
+    color:white;
+    opacity:.9;
 }
 .kpi-card .material-symbols-outlined{
     font-size:34px;
