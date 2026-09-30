@@ -32,11 +32,13 @@ function cargarVista(vista){
                     }
                 }
             if(vista === "historial"){
+                document.body.style.overflow = "auto";
                 document
                     .getElementById("menu-historial")
                     ?.classList.add("activo");
                 }
             if(vista === "admin"){
+                document.body.style.overflow = "auto";
                 document
                     .getElementById("menu-admin")
                     ?.classList.add("activo");
