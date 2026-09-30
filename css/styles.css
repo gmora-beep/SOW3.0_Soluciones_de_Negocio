@@ -1089,7 +1089,13 @@ body.page-exit{
     background-repeat:no-repeat;
 }
 .historial-header{
-    margin-bottom:24px;
+    position:sticky;
+    top:95px;
+    z-index:20;
+    padding:16px 0;
+    margin-bottom:16px;
+    backdrop-filter:blur(12px);
+    background:rgba(15,40,70,.35);
 }
 .historial-header h1{
     color:white;
@@ -1113,12 +1119,12 @@ body.page-exit{
     background:rgba(255,255,255,.08);
     backdrop-filter:blur(10px);
     border:1px solid rgba(255,255,255,.10);
-    border-radius:20px;
-    padding:18px;
-    color:white;
+    border-radius:18px;
+    padding:12px 16px;
+    min-height:70px;
     display:flex;
     align-items:center;
-    gap:16px;
+    gap:12px;
 }
 .kpi-card .material-symbols-outlined{
     font-size:34px;
@@ -1193,4 +1199,11 @@ body.page-exit{
     background-size:100% auto;
     background-position:center -120px;
     background-repeat:no-repeat;
+}
+.historial-panel{
+    background:rgba(15,40,70,.35);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:28px;
+    padding:24px;
 }
