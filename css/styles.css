@@ -991,7 +991,9 @@ body.page-exit{
     align-items:center;
     gap:12px;
     align-self:flex-end;
-    margin-top:-55px;
+
+    position:relative;
+    top:-30px;
 }
 .quote-mark{
     color:#ff8a00;
