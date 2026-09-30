@@ -14,50 +14,10 @@
     <main>
         <h1>Bienvenido a Soluciones de Negocio</h1>
     </main>
-<script>
-fetch("components/header.html")
-    .then(response => response.text())
-    .then(data => {
-        document
-            .getElementById("header-container")
-            .innerHTML = data;
-        document
-            .getElementById("menu-home")
-            ?.classList.add("activo");
-        const btnMenu =
-            document.getElementById("btnMenu");
-        if(btnMenu){
-            btnMenu.addEventListener(
-                "click",
-                function(e){
-                    e.preventDefault();
-                    document
-                        .getElementById("menuContenido")
-                        ?.classList.toggle("hidden");
-                    document
-                        .querySelector(".menu-principal")
-                        ?.classList.toggle("menu-colapsado");
-                }
-            );
-        }
-    });
-document.addEventListener("click", function(e){
-    const enlace = e.target.closest("a[href]");
-    if(!enlace) return;
-    const url = enlace.getAttribute("href");
-    if(
-        url.startsWith("#") ||
-        url.startsWith("http")
-    ){
-        return;
-    }
-    e.preventDefault();
-    document.body.classList.add("fade-out");
-    setTimeout(() => {
-        window.location.href = url;
-    }, 250);
-});
 
+src="js/header.js"
+<script>
+    cargarHeader("menu-home");
 </script>
 </body>
 </html>
