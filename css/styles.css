@@ -882,7 +882,7 @@ body.page-exit{
     padding:24px;
 }
 .home-overlay{
-    height:calc(100vh - 180px);
+    height:calc(100vh - 140px);
     border-radius:28px;
     background:rgba(15,40,70,.40);
     backdrop-filter:blur(12px);
@@ -991,7 +991,7 @@ body.page-exit{
 }
 .home-quote{
     position:absolute;
-    top:40px;
+    top:20px;
     right:50px;
     display:flex;
     align-items:center;
@@ -1029,7 +1029,7 @@ body.page-exit{
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    margin-bottom:2px;
+    margin-bottom:-35px;
 }
 .icon-circle{
     width:48px;
@@ -1059,7 +1059,7 @@ body.page-exit{
     display:flex;
     align-items:center;
     gap:14px;
-    min-height:56px;
+    min-height:40px;
 }
 .card-line{
     width:40px;
