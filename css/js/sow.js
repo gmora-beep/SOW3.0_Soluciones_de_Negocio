@@ -1,4 +1,3 @@
-<script>
 function agregarBeneficioCuantitativo(){
     const tabla =
         document.getElementById(
@@ -184,4 +183,3 @@ function exportarPDF(){
             );    
         });
     }
-</script>
