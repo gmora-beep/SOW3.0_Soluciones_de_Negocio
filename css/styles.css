@@ -894,7 +894,7 @@ body.page-exit{
 }
 .home-message h1{
     color:white;
-    font-size:38px;
+    font-size:32px;
     font-weight:700;
     line-height:1.15;
     margin:0;
@@ -904,17 +904,15 @@ body.page-exit{
     display:grid;
     grid-template-columns:
         repeat(3,1fr);
-    gap:20px;
+    gap:16px;
+    margin-top:10px;
 }
 .info-card{
-    border-radius:24px;
     padding:16px 20px;
-    min-height:130px;
+    height:180px;
     border-radius:20px;
-    background:rgba(255,255,255,.10);
-    backdrop-filter:blur(10px);
-    border:1px solid rgba(255,255,255,.08);
-    color:white;
+    display:flex;
+    flex-direction:column;
 }
 .info-card .material-symbols-outlined{
     font-size:42px;
@@ -922,7 +920,7 @@ body.page-exit{
 }
 .info-card h3{
     margin:0;
-    font-size:28px;
+    font-size:20px;
     font-weight:700;
     line-height:1.15;
 }
@@ -1026,13 +1024,12 @@ body.page-exit{
     margin-bottom:40px;
 }
 .icon-circle{
-    width:64px;
-    height:64px;
+    width:48px;
+    height:48px;
+    min-width:48px;
+    min-height:48px;
     border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:22px;
+    flex-shrink:0;
 }
 .icon-circle.orange{
     background:#ff8a00;
@@ -1049,8 +1046,9 @@ body.page-exit{
 }
 .card-header{
     display:flex;
-    align-items:flex-start;
-    gap:18px;
+    align-items:center;
+    gap:14px;
+    min-height:56px;
 }
 .card-header h3{
     margin-top:6px;
@@ -1069,4 +1067,10 @@ body.page-exit{
 }
 .blue-line{
     background:#2f86ff;
+}
+.info-card p{
+    margin:0;
+    font-size:15px;
+    line-height:1.4;
+    color:white;
 }
