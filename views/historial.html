@@ -1,131 +1,133 @@
 <div class="historial-container portal-background">
-    <div class="historial-header">
-        <div>
-            <h1>
-                Historial de SOWs
-            </h1>
-            <p>
-                Consulta, seguimiento y administración de iniciativas.
-            </p>
-        </div>
-    </div>
-    <div class="historial-kpis">
-        <div class="kpi-card">
-            <span class="material-symbols-outlined">
-                description
-            </span>
+    <div class="historial-panel">
+        <div class="historial-header">
             <div>
-                <h2>25</h2>
-                <p>Total SOWs</p>
+                <h1>
+                    Historial de SOWs
+                </h1>
+                <p>
+                    Consulta, seguimiento y administración de iniciativas.
+                </p>
             </div>
         </div>
-        <div class="kpi-card">
-            <span class="material-symbols-outlined">
-                edit_note
-            </span>
-            <div>
-                <h2>8</h2>
-                <p>Borradores</p>
+        <div class="historial-kpis">
+            <div class="kpi-card">
+                <span class="material-symbols-outlined">
+                    description
+                </span>
+                <div>
+                    <h2>25</h2>
+                    <p>Total SOWs</p>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <span class="material-symbols-outlined">
+                    edit_note
+                </span>
+                <div>
+                    <h2>8</h2>
+                    <p>Borradores</p>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <span class="material-symbols-outlined">
+                    task_alt
+                </span>
+                <div>
+                    <h2>14</h2>
+                    <p>Finalizados</p>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <span class="material-symbols-outlined">
+                    inventory_2
+                </span>
+                <div>
+                    <h2>3</h2>
+                    <p>Archivados</p>
+                </div>
             </div>
         </div>
-        <div class="kpi-card">
-            <span class="material-symbols-outlined">
-                task_alt
-            </span>
-            <div>
-                <h2>14</h2>
-                <p>Finalizados</p>
-            </div>
+        <div class="historial-filtros">
+            <input
+                type="text"
+                placeholder="Buscar SOW...">
+            <select>
+                <option>Todos los estados</option>
+                <option>Borrador</option>
+                <option>Finalizado</option>
+                <option>Archivado</option>
+            </select>
+            <select>
+                <option>Todos los usuarios</option>
+                <option>Gamaliel Rosas</option>
+            </select>
         </div>
-        <div class="kpi-card">
-            <span class="material-symbols-outlined">
-                inventory_2
-            </span>
-            <div>
-                <h2>3</h2>
-                <p>Archivados</p>
-            </div>
+        <div class="historial-tabla-card">
+            <table class="historial-tabla">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Usuario</th>
+                        <th>Última actualización</th>
+                        <th>Estatus</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SOW-001</td>
+                        <td>
+                            Fortalecimiento Consulta PLD
+                        </td>
+                        <td>
+                            Gamaliel Rosas
+                        </td>
+                        <td>
+                            30/09/2026
+                        </td>
+                        <td>
+                            <span class="estatus finalizado">
+                                Finalizado
+                            </span>
+                        </td>
+                        <td>
+                            <button class="accion-tabla">
+                                Ver
+                            </button>
+                            <button class="accion-tabla">
+                                PDF
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SOW-002</td>
+                        <td>
+                            Seguimiento Crédito Nómina
+                        </td>
+                        <td>
+                            Gamaliel Rosas
+                        </td>
+                        <td>
+                            29/09/2026
+                        </td>
+                        <td>
+                            <span class="estatus borrador">
+                                Borrador
+                            </span>
+                        </td>
+                        <td>
+                            <button class="accion-tabla">
+                                Editar
+                            </button>
+                            <button class="accion-tabla">
+                                PDF
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </div>
-    <div class="historial-filtros">
-        <input
-            type="text"
-            placeholder="Buscar SOW...">
-        <select>
-            <option>Todos los estados</option>
-            <option>Borrador</option>
-            <option>Finalizado</option>
-            <option>Archivado</option>
-        </select>
-        <select>
-            <option>Todos los usuarios</option>
-            <option>Gamaliel Rosas</option>
-        </select>
-    </div>
-    <div class="historial-tabla-card">
-        <table class="historial-tabla">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Usuario</th>
-                    <th>Última actualización</th>
-                    <th>Estatus</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>SOW-001</td>
-                    <td>
-                        Fortalecimiento Consulta PLD
-                    </td>
-                    <td>
-                        Gamaliel Rosas
-                    </td>
-                    <td>
-                        30/09/2026
-                    </td>
-                    <td>
-                        <span class="estatus finalizado">
-                            Finalizado
-                        </span>
-                    </td>
-                    <td>
-                        <button class="accion-tabla">
-                            Ver
-                        </button>
-                        <button class="accion-tabla">
-                            PDF
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>SOW-002</td>
-                    <td>
-                        Seguimiento Crédito Nómina
-                    </td>
-                    <td>
-                        Gamaliel Rosas
-                    </td>
-                    <td>
-                        29/09/2026
-                    </td>
-                    <td>
-                        <span class="estatus borrador">
-                            Borrador
-                        </span>
-                    </td>
-                    <td>
-                        <button class="accion-tabla">
-                            Editar
-                        </button>
-                        <button class="accion-tabla">
-                            PDF
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </div>
