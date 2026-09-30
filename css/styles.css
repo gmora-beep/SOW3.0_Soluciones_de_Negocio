@@ -714,9 +714,13 @@ body{
     border:1px solid rgba(255,255,255,.12);
     border-radius:18px;
     backdrop-filter:blur(12px);
+    width:auto;
+    transition:.35s ease;
 }
-
-
+.menu-principal.menu-colapsado{
+    padding:8px;
+    width:auto;
+}
 .acceso-usuario{
     display:flex;
     align-items:center;
