@@ -1,3 +1,4 @@
+console.log("HEADER JS CARGADO");
 function cargarHeader(menuActivo){
     fetch("components/header.html")
         .then(response => response.text())
