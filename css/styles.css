@@ -872,3 +872,69 @@ body.page-exit{
     opacity:0;
     transform:translateX(-24px);
 }
+.home-hero{
+    min-height:calc(100vh - 100px);
+    background-image:
+        url("../imagenes/Designer (34).png");
+    background-size:cover;
+    background-position:center;
+    padding:40px;
+}
+.home-overlay{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(14px);
+    border-radius:32px;
+    padding:40px;
+}
+.home-overlay h1{
+    font-family:"Poppins",sans-serif;
+    font-size:54px;
+    color:white;
+    margin-bottom:10px;
+}
+.home-subtitle{
+    font-size:24px;
+    color:white;
+    margin-bottom:30px;
+    max-width:700px;
+}
+.home-tabs{
+    display:flex;
+    gap:14px;
+    margin-bottom:30px;
+}
+.home-tab{
+    border:none;
+    border-radius:18px;
+    padding:14px 20px;
+    cursor:pointer;
+    background:rgba(255,255,255,.12);
+    color:white;
+    font-family:"Poppins",sans-serif;
+}
+.home-tab.activo{
+    background:#13b5bf;
+}
+.home-cards{
+    display:grid;
+    grid-template-columns:
+        repeat(3,1fr);
+    gap:20px;
+}
+.info-card{
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(10px);
+    border-radius:24px;
+    padding:30px;
+    color:white;
+}
+.info-card .material-symbols-outlined{
+    font-size:48px;
+    color:#13b5bf;
+}
+.info-card h3{
+    margin-top:20px;
+}
