@@ -825,9 +825,6 @@ body{
     transition:.35s ease;
 }
 
-.menu-principal.colapsado #menuContenido{
-    display:none;
-}
 .nav-hamburguesa{
     width:40px;
     height:40px;
