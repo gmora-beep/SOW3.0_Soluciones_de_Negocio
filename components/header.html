@@ -68,12 +68,30 @@
                 Administración
             </span>
         </a>
-        </nav>
+        <div class="menu-separador"></div>
+        <a href="#" class="nav-login">
+            <span class="material-symbols-outlined">
+                login
+            </span>
+            <span>
+                Ingresar
+            </span>
+        </a>
+    </div> <!-- cierre menuContenido -->
+    <a href="#"
+       id="btnMenu"
+       class="nav-icon nav-hamburguesa">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </a>
+</nav>
+
 </div>  
 <script>
 document
     .getElementById("btnMenu")
-    .addEventListener("click", function(e){
+    ?.addEventListener("click", function(e){
         e.preventDefault();
         document
             .getElementById("menuContenido")
