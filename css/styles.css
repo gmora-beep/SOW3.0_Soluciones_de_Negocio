@@ -875,9 +875,10 @@ body.page-exit{
 .home-hero{
     min-height:calc(100vh - 100px);
     background-image:
-        url("../imagenes/Designer (34).png");
+        url("../images/Designer (34).png");
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
     padding:40px;
 }
 .home-overlay{
