@@ -18,40 +18,25 @@ function cargarVista(vista){
                 );
             if(vista === "home"){
                 document
-                    .getElementById(
-                        "menu-home"
-                    )
-                    ?.classList.add(
-                        "activo"
-                    );
-            }
+                    .getElementById("menu-home")
+                    ?.classList.add("activo");
             if(vista === "nuevo-sow"){
                 document
-                    .getElementById(
-                        "menu-sow"
-                    )
-                    ?.classList.add(
-                        "activo"
-                    );
-                inicializarFecha();
-            }
+                    .getElementById("menu-sow")
+                    ?.classList.add("activo");
+                    if(typeof inicializarFecha === "function"){
+                        inicializarFecha();
+                    }
+                }
             if(vista === "historial"){
                 document
-                    .getElementById(
-                        "menu-historial"
-                    )
-                    ?.classList.add(
-                        "activo"
-                    );
-            }
+                    .getElementById("menu-historial")
+                    ?.classList.add("activo");
+                }
             if(vista === "admin"){
                 document
-                    .getElementById(
-                        "menu-admin"
-                    )
-                    ?.classList.add(
-                        "activo"
-                    );
-            }
+                    .getElementById("menu-admin")
+                    ?.classList.add("activo");
+                }
         });
 }
