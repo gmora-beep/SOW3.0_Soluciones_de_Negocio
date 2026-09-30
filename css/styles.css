@@ -707,6 +707,7 @@ body{
     top:16px;
     display:flex;
     align-items:flex-end;
+    justify-content:flex-end;
     gap:8px;
     margin-left:auto;
     padding:8px 10px;
@@ -721,10 +722,13 @@ body{
         background .35s ease;
 }
 .menu-principal.menu-colapsado{
-    width:60px;
+    width:54px;
     padding:8px;
     justify-content:center;
-    }
+    transition:
+        width .25s ease,
+        padding .25s ease;
+}
 .acceso-usuario{
     display:flex;
     align-items:center;
@@ -823,11 +827,12 @@ body{
     max-width:1000px;
     overflow:hidden;
     opacity:1;
+    transform:translateX(0);
     transition:
-        opacity .20s ease,
-        transform .20s ease,
+        opacity .25s ease,
+        transform .25s ease,
+        max-width .25s ease;
 }
-
 .nav-hamburguesa{
     width:40px;
     height:40px;
@@ -845,8 +850,9 @@ body{
 }
 .hidden{
     opacity:0;
-    visibility:hidden;
-    transform:translateX(10px);
+    max-width:0;
+    transform:translateX(12px);
+    overflow:hidden;
     pointer-events:none;
 }
 .menu-principal.menu-colapsado .nav-hamburguesa{
