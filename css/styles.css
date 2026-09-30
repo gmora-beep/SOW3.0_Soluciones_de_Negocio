@@ -1111,20 +1111,27 @@ body.page-exit{
 .historial-kpis{
     display:grid;
     grid-template-columns:
-        repeat(4,1fr);
-    gap:16px;
-    margin-bottom:24px;
+        repeat(4,120px);
+    gap:10px;
 }
 .kpi-card{
     background:rgba(255,255,255,.08);
     backdrop-filter:blur(10px);
     border:1px solid rgba(255,255,255,.10);
-    border-radius:18px;
-    padding:12px 16px;
+    border-radius:16px;
+    padding:10px 14px;
     min-height:70px;
     display:flex;
     align-items:center;
     gap:12px;
+}
+.kpi-card h2{
+    font-size:24px;
+    margin:0;
+}
+.kpi-card p{
+    margin:0;
+    font-size:12px;
 }
 .kpi-card .material-symbols-outlined{
     font-size:34px;
@@ -1206,4 +1213,11 @@ body.page-exit{
     border:1px solid rgba(255,255,255,.10);
     border-radius:28px;
     padding:24px;
+}
+.historial-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:24px;
+    margin-bottom:20px;
 }
