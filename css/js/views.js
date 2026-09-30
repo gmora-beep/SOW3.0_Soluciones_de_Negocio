@@ -20,6 +20,7 @@ function cargarVista(vista){
                 document
                     .getElementById("menu-home")
                     ?.classList.add("activo");
+                }
             if(vista === "nuevo-sow"){
                 document
                     .getElementById("menu-sow")
