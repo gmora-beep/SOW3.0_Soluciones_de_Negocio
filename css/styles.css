@@ -981,6 +981,9 @@ body.page-exit{
     background:#13b5bf;
     color:white;
 }
+.home-action.active-action::before{
+    width:100%;
+}
 .home-quote{
     position:absolute;
     top:40px;
