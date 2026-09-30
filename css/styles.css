@@ -2,8 +2,13 @@ body{
     font-family:Segoe UI,Arial,sans-serif;
     background:#f4f6f9;
     margin:0;
+    opacity:1;
+    transform:translateX(0);
+    transition:
+        opacity .22s ease,
+        transform .22s ease;
+    overflow:hidden;
 }
-
 .header{
     background:linear-gradient(
         90deg,
@@ -861,13 +866,6 @@ body{
 #menuContenido.hidden{
     display:none;
 }
-body{
-    opacity:1;
-    transform:translateX(0);
-    transition:
-        opacity .22s ease,
-        transform .22s ease;
-}
 body.page-exit{
     opacity:0;
     transform:translateX(-24px);
@@ -877,7 +875,7 @@ body.page-exit{
     background-image:
         url("../images/Designer (34).png");
     background-size:100% auto;
-    background-position:center top;
+    background-position:center -120px;
     background-repeat:no-repeat;
     padding:24px;
 }
