@@ -722,8 +722,8 @@ body{
         background .35s ease;
 }
 .menu-principal.menu-colapsado{
-    width:54px;
-    padding:8px;
+    width:56px;
+    padding:8px 0;
     justify-content:center;
     transition:
         width .25s ease,
@@ -824,14 +824,12 @@ body{
     display:flex;
     align-items:center;
     gap:8px;
-    max-width:1000px;
     overflow:hidden;
     opacity:1;
     transform:translateX(0);
     transition:
         opacity .25s ease,
-        transform .25s ease,
-        max-width .25s ease;
+        transform .25s ease,        
 }
 .nav-hamburguesa{
     width:40px;
@@ -841,7 +839,7 @@ body{
     justify-content:center;
     border-radius:12px;
     background:rgba(255,255,255,.10);
-    margin-left:2px;
+    margin-left:0;
 }
 
 .nav-hamburguesa .material-symbols-outlined{
@@ -849,10 +847,8 @@ body{
     font-weight:700;
 }
 .hidden{
-    opacity:0;
-    max-width:0;
-    transform:translateX(12px);
-    overflow:hidden;
+    opacity:0;    
+    transform:scale(.92);   
     pointer-events:none;
 }
 .menu-principal.menu-colapsado .nav-hamburguesa{
