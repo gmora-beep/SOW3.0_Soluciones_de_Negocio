@@ -903,6 +903,7 @@ body.page-exit{
     grid-template-columns:
         repeat(3,1fr);
     gap:12px;
+    margin-top:20px;
 }
 .info-card{
     background:rgba(255,255,255,.08);
