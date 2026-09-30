@@ -701,26 +701,28 @@ function exportarPDF(){
             );    
         });
     }
-document
-    .getElementById("btnMenu")
-    .addEventListener("click", function(e){
-        e.preventDefault();
-        document
-            .getElementById("menuContenido")
-            .classList.toggle("hidden");
-        document
-            .querySelector(".menu-principal")
-            .classList.toggle("menu-colapsado");
-    });
-    <script>
+
+</script>
+
 <script>
- fetch("components/header.html")
-.then(response => response.text())
-.then(data => {
- document
-.getElementById("header-container")
-.innerHTML = data;
- });
- </script>
+fetch("components/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document
+            .getElementById("header-container")
+            .innerHTML = data;
+        document
+            .getElementById("btnMenu")
+            .addEventListener("click", function(e){
+                e.preventDefault();
+                document
+                    .getElementById("menuContenido")
+                    .classList.toggle("hidden");
+                document
+                    .querySelector(".menu-principal")
+                    .classList.toggle("menu-colapsado");
+            });
+    });
+</script>
 </body>
 </html>
