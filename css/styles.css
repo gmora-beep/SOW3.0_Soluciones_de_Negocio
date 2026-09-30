@@ -985,3 +985,25 @@ body.page-exit{
     align-items:flex-start;
     margin-bottom:40px;
 }
+.icon-circle{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:22px;
+}
+.icon-circle.orange{
+    background:#ff8a00;
+}
+.icon-circle.cyan{
+    background:#08c7d8;
+}
+.icon-circle.blue{
+    background:#2f86ff;
+}
+.icon-circle .material-symbols-outlined{
+    color:white;
+    font-size:38px;
+}
