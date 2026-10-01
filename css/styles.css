@@ -1198,13 +1198,21 @@ body.page-exit{
     color:white;
 }
 .historial-tabla th{
-    text-align:left;
-    padding:14px;
+    background:transparent;
+    color:rgba(255,255,255,.85);
+    font-size:11px;
+    font-weight:600;
+    padding:8px 12px;
     border-bottom:1px solid rgba(255,255,255,.10);
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 .historial-tabla td{
-    padding:14px;
+    padding:8px;
     border-bottom:1px solid rgba(255,255,255,.05);
+}
+.historial-tabla thead{
+    opacity:.85;
 }
 .estatus{
     padding:6px 12px;
