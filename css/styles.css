@@ -1084,8 +1084,8 @@ body.page-exit{
     padding:0 24px 24px 24px;    
     background-image:
         url("../images/Designer (34).png");
-    background-size:100% auto;
-    background-position:center -120px;
+    background-size:cover;
+    background-position:center top;
     background-repeat:no-repeat;
 }
 .historial-header{
