@@ -1155,6 +1155,7 @@ body.page-exit{
     display:flex;
     justify-content:flex-end;
     gap:12px;
+    margin-top:-10px;
     margin-bottom:16px;
 }
 .historial-filtros input,
@@ -1166,17 +1167,23 @@ body.page-exit{
     color:white;
     padding:10px 16px;
     min-width:180px;
+    transition:.3s ease;
 }
 .historial-filtros input:hover,
 .historial-filtros select:hover{
-    border-color:#13b5bf;
+    background:rgba(19,181,191,.25);
+    border-color:#13b5bf;    
 }
 .historial-filtros input:focus,
 .historial-filtros select:focus{
+    background:#13b5bf;
+    color:white;
     outline:none;
     border-color:#13b5bf;
-    box-shadow:
-        0 0 0 2px rgba(19,181,191,.25);
+}
+.historial-filtros option{
+    color:#16395f;
+    background:white;
 }
 .historial-tabla-card{
     background:rgba(255,255,255,.08);
