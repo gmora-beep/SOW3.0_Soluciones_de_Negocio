@@ -1080,7 +1080,7 @@ body.page-exit{
 
         <!-- Historial -->
 .historial-container{
-    padding:8px 24px 24px 24px;
+    padding:0 24px 24px 24px;
     min-height:calc(100vh - 95px);
     background-image:
         url("../images/Designer (34).png");
@@ -1250,6 +1250,7 @@ body.page-exit{
     border-radius:28px;
     padding:12px 16px;
     margin-top:0;
+    transform:translateY(-8px);
 }
 .historial-top{
     display:flex;
