@@ -1116,8 +1116,9 @@ body.page-exit{
     background:rgba(255,255,255,.08);
     backdrop-filter:blur(10px);
     border:1px solid rgba(255,255,255,.10);
-    border-radius:16px;
-    padding:10px 14px;
+    border-radius:14px;
+    padding:8px 12px;
+    min-height:56px;
     color:white;
 }
 .kpi-top{
@@ -1132,7 +1133,7 @@ body.page-exit{
 }
 .kpi-top h2{
     margin:0;
-    font-size:30px;
+    font-size:22px;
     font-weight:700;
     color:white;
 }
@@ -1152,15 +1153,30 @@ body.page-exit{
 }
 .historial-filtros{
     display:flex;
+    justify-content:flex-end;
     gap:12px;
-    margin-bottom:20px;
+    margin-bottom:16px;
 }
 .historial-filtros input,
 .historial-filtros select{
-    padding:12px;
-    border-radius:12px;
-    border:none;
-    min-width:220px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:14px;
+    color:white;
+    padding:10px 16px;
+    min-width:180px;
+}
+.historial-filtros input:hover,
+.historial-filtros select:hover{
+    border-color:#13b5bf;
+}
+.historial-filtros input:focus,
+.historial-filtros select:focus{
+    outline:none;
+    border-color:#13b5bf;
+    box-shadow:
+        0 0 0 2px rgba(19,181,191,.25);
 }
 .historial-tabla-card{
     background:rgba(255,255,255,.08);
@@ -1225,12 +1241,12 @@ body.page-exit{
     backdrop-filter:blur(12px);
     border:1px solid rgba(255,255,255,.10);
     border-radius:28px;
-    padding:24px;
+    padding:18px;
 }
 .historial-top{
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    gap:24px;
+    gap:20px;
     margin-bottom:4px;
 }
