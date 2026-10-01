@@ -1081,12 +1081,7 @@ body.page-exit{
         <!-- Historial -->
 .historial-container{
     min-height:calc(100vh - 95px);
-    padding:0 24px 24px 24px;    
-    background-image:
-        url("../images/Designer (34).png");
-    background-size:cover;
-    background-position:center top;
-    background-repeat:no-repeat;
+    padding:0 24px 24px 24px;
 }
 .historial-header{
     background:none;
