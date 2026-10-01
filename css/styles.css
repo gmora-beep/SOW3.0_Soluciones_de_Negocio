@@ -1089,13 +1089,11 @@ body.page-exit{
     background-repeat:no-repeat;
 }
 .historial-header{
-    position:sticky;
-    top:95px;
-    z-index:20;
-    padding:16px 0;
-    margin-bottom:16px;
-    backdrop-filter:blur(12px);
-    background:rgba(15,40,70,.35);
+    background:none;
+    padding:0;
+    border:none;
+    box-shadow:none;
+    margin:0;
 }
 .historial-header h1{
     color:white;
@@ -1234,5 +1232,5 @@ body.page-exit{
     justify-content:space-between;
     align-items:flex-start;
     gap:24px;
-    margin-bottom:20px;
+    margin-bottom:4px;
 }
