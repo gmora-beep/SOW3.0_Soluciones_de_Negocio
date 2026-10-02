@@ -1210,7 +1210,6 @@ body.page-exit{
     height:100%;
     border-collapse:collapse;
     color:white;
-    table-layout:fixed;
 }
 .historial-tabla th{
     background:transparent;
@@ -1220,7 +1219,7 @@ body.page-exit{
     padding:8px 16px;
     border-bottom:1px solid rgba(255,255,255,.08);
     text-transform:uppercase;
-    letter-spacing:1.5px;
+    letter-spacing:.5px;
 }
 .historial-tabla td{
     padding:8px 16px;
@@ -1279,18 +1278,6 @@ body.page-exit{
 .historial-tabla th:nth-child(1),
 .historial-tabla td:nth-child(1){
     width:8%;
-}
-.historial-tabla th:nth-child(2),
-.historial-tabla td:nth-child(2){
-    width:32%;
-    white-space:normal;
-    word-break:break-word;
-    line-height:1.35;
-}
-.historial-tabla th:nth-child(3),
-.historial-tabla td:nth-child(3){
-    width:18%;
-    font-weight:600;
 }
 .historial-tabla th:nth-child(4),
 .historial-tabla td:nth-child(4){
