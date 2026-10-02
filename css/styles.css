@@ -1130,14 +1130,14 @@ body.page-exit{
     border:1px solid rgba(255,255,255,.08);
     border-radius:14px;
     padding:8px 12px;
-    min-height:52px;
+    min-height:46px;
     color:white;
 }
 .kpi-top{
     display:flex;
     align-items:center;
     gap:8px;
-    margin-bottom:4px;
+    margin-bottom:2px;
 }
 .kpi-top .material-symbols-outlined{
     font-size:22px;
@@ -1146,15 +1146,15 @@ body.page-exit{
 .kpi-top h2{
     margin:0;
     font-family:"Poppins",sans-serif;
-    font-size:36px;
-    font-weight:700;
-    letter-spacing:.5px;
+    font-size:30px;
+    font-weight:700;    
     color:white;
     line-height:1;
 }
 .kpi-card p{
-    margin-top:4px;
-    font-size:13px;
+    margin-top:2px;
+    margin-bottom:0;
+    font-size:14px;
     font-weight:600;
     color:rgba(255,255,255,.9);
 }
