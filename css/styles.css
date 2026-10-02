@@ -1081,7 +1081,7 @@ body.page-exit{
         <!-- Historial -->
 .historial-container{
     min-height:calc(100vh - 95px);
-    padding:0 24px 24px 24px;
+    padding:0 40px 24px 40px;
     display:flex;
     flex-direction:column;
     position:relative;
@@ -1209,13 +1209,13 @@ body.page-exit{
     color:rgba(255,255,255,.65);
     font-size:10px;
     font-weight:700;
-    padding:4px 12px 10px 12px;
+    padding:4px 16px 10px 16px
     border-bottom:1px solid rgba(255,255,255,.08);
     text-transform:uppercase;
     letter-spacing:1.5px;
 }
 .historial-tabla td{
-    padding:8px;
+    padding:8px 16px;
     border-bottom:1px solid rgba(255,255,255,.05);
 }
 .historial-tabla thead{
