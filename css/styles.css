@@ -1091,6 +1091,10 @@ body.page-exit{
     padding:0;
     border:none;
     box-shadow:none;
+    position:relative;
+    z-index:2;
+    display:inline-block;
+    padding:12px 18px;
 }
 .historial-header h1{
     color:white;
@@ -1263,4 +1267,21 @@ body.page-exit{
 .historial-kpis{
     position:relative;
     z-index:1;
+}
+.historial-header::before{
+    content:"";
+    position:absolute;
+    top:-15px;
+    left:-20px;
+    width:120%;
+    height:130px;
+    background:
+        radial-gradient(
+            ellipse at left,
+            rgba(1,36,74,.75),
+            rgba(1,36,74,.35),
+            transparent
+        );
+    z-index:-1;
+    pointer-events:none;
 }
