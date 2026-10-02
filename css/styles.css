@@ -1097,11 +1097,15 @@ body.page-exit{
     font-size:36px;
     font-weight:700;
     margin:0;
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.65);
 }
 .historial-header p{
     color:white;
     opacity:.85;
     margin-top:8px;
+    text-shadow:
+        0 1px 6px rgba(0,0,0,.65);
 }
 .historial-kpis{
     display:grid;
