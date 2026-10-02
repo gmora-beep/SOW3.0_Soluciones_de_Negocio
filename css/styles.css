@@ -1122,6 +1122,7 @@ body.page-exit{
     grid-template-columns:
         repeat(4,130px);
     gap:12px;
+    margin-top:14px;
 }
 .kpi-card{
     background:rgba(15,40,70,.20);
