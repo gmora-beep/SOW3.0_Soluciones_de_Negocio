@@ -1082,6 +1082,8 @@ body.page-exit{
 .historial-container{
     min-height:calc(100vh - 95px);
     padding:0 24px 24px 24px;
+    display:flex;
+    flex-direction:column;
 }
 .historial-header{
     background:none;
@@ -1181,7 +1183,7 @@ body.page-exit{
     background:white;
 }
 .historial-tabla-card{
-    min-height:calc(100vh - 360px);
+    min-height:calc(100vh - 260px);
     background:rgba(15,40,70,.20);
     backdrop-filter:blur(6px);
     border:1px solid rgba(255,255,255,.06);
