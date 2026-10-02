@@ -1094,7 +1094,7 @@ body.page-exit{
     position:relative;
     z-index:2;
     display:inline-block;
-    padding:12px 18px;
+    padding:12px 28px;
 }
 .historial-header h1{
     color:white;
@@ -1211,7 +1211,7 @@ body.page-exit{
     color:rgba(255,255,255,.65);
     font-size:10px;
     font-weight:700;
-    padding:4px 16px 10px 16px
+    padding:4px 16px 10px 16px;
     border-bottom:1px solid rgba(255,255,255,.08);
     text-transform:uppercase;
     letter-spacing:1.5px;
@@ -1269,21 +1269,4 @@ body.page-exit{
 .historial-kpis{
     position:relative;
     z-index:1;
-}
-.historial-header::before{
-    content:"";
-    position:absolute;
-    top:-15px;
-    left:-20px;
-    width:120%;
-    height:130px;
-    background:
-        radial-gradient(
-            ellipse at left,
-            rgba(1,36,74,.75),
-            rgba(1,36,74,.35),
-            transparent
-        );
-    z-index:-1;
-    pointer-events:none;
 }
