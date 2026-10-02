@@ -1299,7 +1299,7 @@ body.page-exit{
 }
 .historial-tabla th,
 .historial-tabla td{
-    vertical-align:middle;
+    vertical-align:center;
 }
 .historial-tabla th:first-child,
 .historial-tabla td:first-child{
