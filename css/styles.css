@@ -1145,15 +1145,18 @@ body.page-exit{
 }
 .kpi-top h2{
     margin:0;
-    font-size:18px;
+    font-family:"Poppins",sans-serif;
+    font-size:36px;
     font-weight:700;
+    letter-spacing:.5px;
     color:white;
+    line-height:1;
 }
 .kpi-card p{
-    margin:0;
-    font-size:11px;
-    color:rgba(255,255,255,.85);
-    opacity:.9;
+    margin-top:4px;
+    font-size:13px;
+    font-weight:600;
+    color:rgba(255,255,255,.9);
 }
 .kpi-card .material-symbols-outlined{
     font-size:34px;
