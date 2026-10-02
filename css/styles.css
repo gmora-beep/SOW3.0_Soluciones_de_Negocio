@@ -1212,11 +1212,13 @@ body.page-exit{
     color:white;
 }
 .historial-tabla th{
-    font-size:9px;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:.2px;
-    opacity:.75;
+    font-size:12px;
+    font-weight:700;
+    text-transform:none;
+    letter-spacing:0;
+    opacity:1;
+    color:white;
+    padding:8px 16px;
 }
 .historial-tabla td{
     padding:8px 16px;
@@ -1298,4 +1300,8 @@ body.page-exit{
 .historial-tabla th,
 .historial-tabla td{
     vertical-align:middle;
+}
+.historial-tabla th:first-child,
+.historial-tabla td:first-child{
+    padding-left:16px;
 }
