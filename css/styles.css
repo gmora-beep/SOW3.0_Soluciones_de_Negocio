@@ -214,6 +214,7 @@ body{
 .opciones-planeada{
     display:flex;
     gap:20px;
+    align-items:center;
 }
 .radio-simple{
     display:flex;
