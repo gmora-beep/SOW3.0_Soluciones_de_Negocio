@@ -1382,3 +1382,16 @@ body.page-exit{
 .opcion-continuidad{
     width:190px !important;
 }
+.campo-tipo-iniciativa{
+    justify-content:flex-start !important;
+    gap:16px;
+}
+.campo-tipo-iniciativa .campo-label{
+    width:180px !important;
+    min-width:180px !important;
+}
+.campo-tipo-iniciativa .opciones-tipo{
+    justify-content:flex-start;
+    gap:10px;
+    flex-wrap:nowrap;
+}
