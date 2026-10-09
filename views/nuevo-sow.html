@@ -294,10 +294,11 @@
                 <th>Descripción general</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="procesos-impactados">
             <tr>
                 <td>
                     <select>
+                        <option>Seleccionar...</option>
                         <option>ORIGINACIÓN DxN</option>
                         <option>ORIGINACIÓN CAPTACIÓN</option>
                         <option>VENTA ASISTIDA</option>
@@ -319,6 +320,14 @@
             </tr>
         </tbody>
     </table>
+        <div class="acciones-tabla">    
+        <button
+            type="button"
+            class="btn-agregar"
+            onclick="agregarProceso()">    
+            ＋ Agregar proceso    
+        </button>    
+    </div>
 </div>  
     
 </div>
