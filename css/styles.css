@@ -175,17 +175,18 @@ body{
 
 .campo{
     display:grid;
-    grid-template-columns:240px minmax(220px,1fr);
+    grid-template-columns:190px 1fr;
     align-items:center;
-    gap:14px;
+    gap:12px;
     margin-bottom:10px;
 }
+`
 
 .campo-label{
     display:flex;
     align-items:center;
-    gap:10px;
-    width:240px;
+    gap:190px;
+    width:190px;
     min-width:240px;
     white-space:nowrap;
 }
@@ -1471,6 +1472,7 @@ body.page-exit{
 }
 .campo input,
 .campo select{
+    max-width:420px;
     width:100%;
     height:36px;
     border-radius:10px;
@@ -1480,6 +1482,7 @@ body.page-exit{
     padding:0 14px;
     font-size:14px;
 }
+
 .campo input::placeholder{
     color:rgba(255,255,255,.55);
 }
@@ -1496,4 +1499,8 @@ body.page-exit{
     color:rgba(255,255,255,.65);
     font-size:13px;
     margin-left:10px;
+}
+.columna:last-child .campo input,
+.columna:last-child .campo select{
+    max-width:480px;
 }
