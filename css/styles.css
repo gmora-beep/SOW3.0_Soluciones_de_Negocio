@@ -213,7 +213,7 @@ body{
 }
 .opciones-planeada{
     display:flex;
-    gap:20px;
+    gap:24px;
     align-items:center;
 }
 .radio-simple{
@@ -221,25 +221,41 @@ body{
     align-items:center;
     gap:8px;
     color:white;
+    font-size:15px;
+    font-weight:600;
     cursor:pointer;
 }
 .radio-simple input[type="radio"]{
-    width:18px;
-    height:18px;
+    appearance:none;
+    -webkit-appearance:none;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,.6);
+    background:transparent;
+}
+.radio-simple input[type="radio"]:checked{
+    background:#13b5bf;
+    border-color:#13b5bf;
+    box-shadow:
+        0 0 0 3px rgba(19,181,191,.20);
 }
 .opcion{
     display:flex;
     align-items:center;
     justify-content:center;
-    height:38px;
-    padding:0 14px;
+    gap:6px;
+    height:36px;
+    padding:0 8px;
+    min-width:0;
     border-radius:10px;
     color:white;
-    font-size:13px;
+    font-size:12px;
     font-weight:600;
     cursor:pointer;
     transition:.25s ease;
     white-space:nowrap;
+    overflow:hidden;
 }
 .campo-label{
     display:flex;
@@ -248,6 +264,7 @@ body{
     font-size:14px;
     min-width:210px;
     white-space:nowrap;
+    color:white;
 }
 
 .icono{
@@ -279,6 +296,7 @@ body{
 .opcion-continuidad{
     border:1px solid #9ca3af;
     background:rgba(156,163,175,.08);
+    width:auto !important;
 }
 .opcion-estrategica:has(input:checked){
     background:#23c7c7;
