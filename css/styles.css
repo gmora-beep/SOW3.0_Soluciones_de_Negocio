@@ -291,11 +291,12 @@ body{
     height:auto;
 }
 .problema-layout{
-    display:flex;
-    flex-direction:column;
+    display:grid;
+    grid-template-columns:
+        repeat(3,1fr);
     gap:16px;
-    height:100%;
 }
+
 
 .problema-card{
     border:1px solid #d8eef0;
