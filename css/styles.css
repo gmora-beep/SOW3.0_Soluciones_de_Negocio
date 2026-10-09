@@ -174,28 +174,28 @@ body{
 }
 
 .columna:first-child{
-    border-right:1px solid rgba(
-        255,
-        255,
-        255,
-        .12
-    );
-    padding-right:24px;
+    border-right:1px solid rgba(255,255,255,.08);
+    padding-right:18px;
 }
 
 .campo{
     display:grid;
-    grid-template-columns:220px 1fr;
+    grid-template-columns:170px 1fr;
     align-items:center;
     gap:12px;
     margin-bottom:8px;
 }
 
 .campo label{
-    width:220px;
+    width:auto;
     font-size:14px;
     font-weight:600;
-    color:#334155;
+    color:white;
+    min-width:auto;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    white-space:nowrap;
 }
 
 .campo input{
