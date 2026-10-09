@@ -218,3 +218,8 @@ function agregarProceso(){
         `
     );
 }
+function autoExpand(textarea){
+    textarea.style.height = "38px";
+    textarea.style.height =
+        textarea.scrollHeight + "px";
+}
