@@ -67,11 +67,37 @@
     </div>
 
             <div class="campo">
+                <div class="campo-label">
+                    <span class="material-symbols-outlined icono">
+                        account_tree
+                    </span>
+                    <label>Dirección</label>
+                </div>
+                <select>
+                    <option>Seleccionar...</option>
+                    <option>Administración y Finanzas</option>
+                    <option>Negocios y Canales</option>
+                    <option>MásNómina / CMO</option>
+                    <option>Crédito y Operaciones</option>
+                    <option>Jurídico y Cumplimiento</option>
+                    <option>Relaciones Institucionales</option>
+                    <option>Tecnología y Datos</option>
+                    <option>Capital Humano</option>
+                    <option>Estrategia</option>
+                    <option>Banca de Gobierno</option>
+                    <option>Crédito Mayoristas</option>
+                    <option>Hub de Innovación</option>
+                    <option>Riesgo Ctrl Interno</option>
+                    <option>No clasificado</option>
+                </select>
+            </div>            
+            
+            <div class="campo">
             <div class="campo-label">
                 <span class="material-symbols-outlined icono">
                     star
                 </span>
-                <label>Sponsor (EPIC Owner)</label>
+                <label>EPIC Owner</label>
             </div>
             <input type="text">        
         </div>
@@ -83,7 +109,19 @@
                 </span>
                 <label>Línea de negocio</label>
             </div>
-            <input type="text">
+            <select>
+                <option>Seleccionar...</option>
+                <option>Crédito DxN</option>
+                <option>Captación banca mayorista</option>
+                <option>Captación banca minorista</option>
+                <option>Vehículos de Fondeo</option>
+                <option>Crédito Comercial</option>
+                <option>Seguros y Asistencias</option>
+                <option>Banca de Gobierno</option>
+                <option>Crédito Garantía Líquida</option>
+                <option>Cumplimiento</option>
+                <option>Varias</option>
+            </select>
         </div>
             
             <div class="campo">
@@ -124,35 +162,62 @@
                     </span>
                     <label>Tipo de iniciativa</label>
                 </div>
+                
                 <div class="opciones-tipo">
                     <label class="opcion opcion-estrategica">
-                        <span>Estratégica</span>
-                    
+                        <span>Estratégica</span>                    
                         <input
                             type="radio"
                             name="tipo-iniciativa"
                             value="Estrategica">
-                    </label>
-                    
+                    </label>                    
                     <label class="opcion opcion-transformacion">
-                        <span>Transformación</span>
-                    
+                        <span>Transformación</span>                    
                         <input
                             type="radio"
                             name="tipo-iniciativa"
                             value="Transformacion">
-                    </label>
-                    
+                    </label>                    
                     <label class="opcion opcion-regulatoria">
-                        <span>Regulatoria</span>
-                    
+                        <span>Regulatoria</span>                    
                         <input
                             type="radio"
                             name="tipo-iniciativa"
                             value="Regulatoria">
                     </label>
+                    <label class="opcion opcion-continuidad">                    
+                        <span>Continuidad Operativa</span>                    
+                        <input
+                            type="radio"
+                            name="tipo-iniciativa"
+                            value="Continuidad Operativa">                    
+                    </label>
                 </div>
             </div>
+            <div class="campo">
+                <div class="campo-label">
+                    <span class="material-symbols-outlined icono">
+                        fact_check
+                    </span>
+                    <label>¿Fue planeada?</label>
+                </div>
+                <div class="opciones-tipo">
+                    <label class="opcion">
+                        <span>Sí</span>
+                        <input
+                            type="radio"
+                            name="planeada"
+                            value="Si">
+                    </label>
+                    <label class="opcion">
+                        <span>No</span>
+                        <input
+                            type="radio"
+                            name="planeada"
+                            value="No">
+                    </label>
+                </div>
+            </div>        
         </div>
     </div>
 </div>
