@@ -211,7 +211,21 @@ body{
     gap:8px;
     flex-wrap:wrap;
 }
-
+.opciones-planeada{
+    display:flex;
+    gap:20px;
+}
+.radio-simple{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:white;
+    cursor:pointer;
+}
+.radio-simple input[type="radio"]{
+    width:18px;
+    height:18px;
+}
 .opcion{
     display:flex;
     align-items:center;
@@ -259,7 +273,9 @@ body{
 }
 
 .opcion-continuidad{
-    border-color:#9ca3af;
+    min-width:190px;
+    width:auto !important;
+    flex-shrink:0;
 }
 .opcion-estrategica:has(input:checked){
     background:rgba(35,199,199,.15);
