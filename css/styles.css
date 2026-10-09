@@ -213,10 +213,18 @@ body{
 }
 
 .opcion{
-    width:auto !important;
-    min-width:auto !important;
-    padding:8px 12px;
-    justify-content:center;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    min-width:120px;
+    height:34px;
+    padding:0 10px;
+    border-radius:8px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.15);
+    color:white;
+    cursor:pointer;
 }
 .campo-label{
     display:flex;
@@ -254,24 +262,35 @@ body{
     cursor:pointer;
 }
 
-.circulo{
-    width:18px;
-    height:18px;
-    border-radius:4px;
-    border:2px solid;
-    margin-left:12px;
-}
-
-.opcion-estrategica .circulo{
+.opcion-estrategica{
     border-color:#23c7c7;
 }
 
-.opcion-transformacion .circulo{
+.opcion-transformacion{
     border-color:#8b5cf6;
 }
 
-.opcion-regulatoria .circulo{
+.opcion-regulatoria{
     border-color:#f59e0b;
+}
+
+.opcion-continuidad{
+    border-color:#9ca3af;
+}
+.opcion-estrategica:has(input:checked){
+    background:rgba(35,199,199,.15);
+}
+
+.opcion-transformacion:has(input:checked){
+    background:rgba(139,92,246,.15);
+}
+
+.opcion-regulatoria:has(input:checked){
+    background:rgba(245,158,11,.15);
+}
+
+.opcion-continuidad:has(input:checked){
+    background:rgba(156,163,175,.15);
 }
 .logo{
     width:120px;
@@ -593,13 +612,15 @@ body{
     appearance:none;
     -webkit-appearance:none;
 
-    width:18px;
-    height:18px;
+    width:12px;
+    height:12px;
 
     border:2px solid #cbd5e1;
     border-radius:4px;
 
     cursor:pointer;
+
+    flex-shrink:0;
 }
 .opcion-estrategica input[type="radio"]{
     border-color:#23c7c7;
@@ -1371,10 +1392,7 @@ body.page-exit{
     min-width:auto !important;
 }
 
-.opcion-continuidad{
-    width:auto !important;
-    padding:8px 12px;
-}
+
 .campo-tipo-iniciativa{
     justify-content:flex-start !important;
     gap:16px;
