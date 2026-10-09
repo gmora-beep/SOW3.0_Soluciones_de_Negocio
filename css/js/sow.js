@@ -221,8 +221,5 @@ function agregarProceso(){
 function autoExpand(elemento){
     elemento.style.height = "38px";
     elemento.style.height =
-        Math.max(
-            38,
-            elemento.scrollHeight
-        ) + "px";
+        elemento.scrollHeight + "px";
 }
