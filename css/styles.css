@@ -1322,7 +1322,7 @@ body.page-exit{
     overflow:hidden;
     border:1px solid #d6dbe1;
     border-radius:8px;
-    padding:8px;
+    padding:4px 8px;
     font-family:inherit;
     font-size:14px;
     line-height:1.4;
