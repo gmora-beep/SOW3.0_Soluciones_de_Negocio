@@ -1462,3 +1462,7 @@ body.page-exit{
     font-size:26px;
     color:#13b5bf;
 }
+.sow-page{
+    min-height:calc(100vh - 95px);
+    padding:12px 24px 24px 24px;
+}
