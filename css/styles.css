@@ -231,17 +231,13 @@ body{
     width:18px;
     height:18px;
     border-radius:50%;
-    border:2px solid rgba(
-        19,
-        211,
-        216,
-        .70
-    );
+    border:2px solid rgba(19,211,216,.70);
     background:transparent;
     cursor:pointer;
     position:relative;
     transition:.25s ease;
     flex-shrink:0;
+    padding:0;
 }
 .radio-simple input[type="radio"]::before{
     content:"";
@@ -259,13 +255,9 @@ body{
 }
 .radio-simple input[type="radio"]:checked{
     border-color:#13d3d8;
+    border:3px solid #13d3d8;
     box-shadow:
-        0 0 8px rgba(
-            19,
-            211,
-            216,
-            .50
-        );
+        0 0 8px rgba(19,211,216,.55);
 }
 .radio-simple input[type="radio"]:checked::before{
     transform:
