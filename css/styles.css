@@ -1306,3 +1306,11 @@ body.page-exit{
 .historial-tabla td:first-child{
     padding-left:16px;
 }
+.procesos-integrados{
+    margin-top:20px;
+}
+.procesos-integrados h3{
+    color:white;
+    font-size:18px;
+    margin-bottom:12px;
+}
