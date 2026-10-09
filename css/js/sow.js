@@ -184,7 +184,6 @@ function exportarPDF(){
         });
     }
 function agregarProceso(){
-
     const tabla =
         document.getElementById(
             "procesos-impactados"
@@ -205,7 +204,6 @@ function agregarProceso(){
                     <option>PROCESOS CORE</option>
                     <option>BANCA POR INTERNET</option>
                     <option>ATENCIÓN AL CLIENTE</option>
-
                 </select>
             </td>
             <td>
