@@ -46,35 +46,28 @@
     </div>
 </div>
         
-<div class="seccion-card">
+<div class="seccion-card seccion-card-a">
     <div class="seccion-titulo">
         <div class="seccion-letra">
             A
         </div>
         <h2>INFORMACIÓN GENERAL</h2>
     </div>
+    <span class="seccion-subtitulo">
+        Datos principales de la iniciativa.
+    </span>
     <div class="informacion-general">
+        <!-- COLUMNA IZQUIERDA -->
         <div class="columna">
             <div class="campo">
                 <div class="campo-label">
-            <span class="material-symbols-outlined icono">
-                    edit_square
-            </span>
-            <label>Nombre de la iniciativa</label>
-        </div>       
-        <input type="text">        
-    </div>
-
-            <div class="campo">
-                <div class="campo-label">
-            <span class="material-symbols-outlined icono">
-                apartment
-            </span>
-            <label>Área solicitante</label>
-        </div>        
-        <input type="text">        
-    </div>
-
+                    <span class="material-symbols-outlined icono">
+                        edit_square
+                    </span>
+                    <label>Nombre de la iniciativa</label>
+                </div>
+                <input type="text">
+            </div>
             <div class="campo">
                 <div class="campo-label">
                     <span class="material-symbols-outlined icono">
@@ -99,8 +92,28 @@
                     <option>Riesgo Ctrl Interno</option>
                     <option>No clasificado</option>
                 </select>
-            </div>            
-            
+            </div>
+            <div class="campo">
+                <div class="campo-label">
+                    <span class="material-symbols-outlined icono">
+                        business_center
+                    </span>
+                    <label>Línea de negocio</label>
+                </div>
+                <select>
+                    <option>Seleccionar...</option>
+                    <option>Crédito DxN</option>
+                    <option>Captación banca mayorista</option>
+                    <option>Captación banca minorista</option>
+                    <option>Vehículos de Fondeo</option>
+                    <option>Crédito Comercial</option>
+                    <option>Seguros y Asistencias</option>
+                    <option>Banca de Gobierno</option>
+                    <option>Crédito Garantía Líquida</option>
+                    <option>Cumplimiento</option>
+                    <option>Varias</option>
+                </select>
+            </div>
             <div class="campo">
                 <div class="campo-label">
                     <span class="material-symbols-outlined icono">
@@ -121,60 +134,36 @@
                     <option>Alfredo Flores</option>
                 </select>
             </div>
-            
             <div class="campo">
-            <div class="campo-label">
-                <span class="material-symbols-outlined icono">
-                    business_center
-                </span>
-                <label>Línea de negocio</label>
+                <div class="campo-label">
+                    <span class="material-symbols-outlined icono">
+                        apartment
+                    </span>
+                    <label>Área solicitante</label>
+                </div>
+                <input type="text">
             </div>
-            <select>
-                <option>Seleccionar...</option>
-                <option>Crédito DxN</option>
-                <option>Captación banca mayorista</option>
-                <option>Captación banca minorista</option>
-                <option>Vehículos de Fondeo</option>
-                <option>Crédito Comercial</option>
-                <option>Seguros y Asistencias</option>
-                <option>Banca de Gobierno</option>
-                <option>Crédito Garantía Líquida</option>
-                <option>Cumplimiento</option>
-                <option>Varias</option>
-            </select>
         </div>
-            
+        <!-- COLUMNA DERECHA -->
+        <div class="columna">
             <div class="campo">
-            <div class="campo-label">
-                <span class="material-symbols-outlined icono">
-                    target
-                </span>
-                <label>Objetivo estratégico</label>
-            </div>        
-            <input type="text">        
-        </div>
-    </div>
-    <div class="columna">
+                <div class="campo-label">
+                    <span class="material-symbols-outlined icono">
+                        person
+                    </span>
+                    <label>Solicitante</label>
+                </div>
+                <input type="text">
+            </div>
             <div class="campo">
-            <div class="campo-label">
-                <span class="material-symbols-outlined icono">
-                    person
-                </span>
-                <label>Solicitante</label>
-            </div>        
-            <input type="text">        
-        </div>
-            
-            <div class="campo">        
-            <div class="campo-label">
-                <span class="material-symbols-outlined icono">
-                    person
-                </span>
-                <label>PO (apoyo en el llenado)</label>
-            </div>        
-            <input type="text">        
-        </div>
-
+                <div class="campo-label">
+                    <span class="material-symbols-outlined icono">
+                        person
+                    </span>
+                    <label>PO (apoyo en el llenado)</label>
+                </div>
+                <input type="text">
+            </div>
             <div class="campo tipo-iniciativa campo-tipo-iniciativa">
                 <div class="campo-label">
                     <span class="material-symbols-outlined icono">
@@ -182,37 +171,41 @@
                     </span>
                     <label>Tipo de iniciativa</label>
                 </div>
-                
                 <div class="opciones-tipo">
                     <label class="opcion opcion-estrategica">
-                        <span>Estratégica</span>                    
-                        <input
-                            type="radio"
-                            name="tipo-iniciativa"
-                            value="Estrategica">
-                    </label>                    
-                    <label class="opcion opcion-transformacion">
-                        <span>Transformación</span>                    
-                        <input
-                            type="radio"
-                            name="tipo-iniciativa"
-                            value="Transformacion">
-                    </label>                    
-                    <label class="opcion opcion-regulatoria">
-                        <span>Regulatoria</span>                    
-                        <input
-                            type="radio"
-                            name="tipo-iniciativa"
-                            value="Regulatoria">
+                        <span>Estratégica</span>
+                        <input type="radio"
+                               name="tipo-iniciativa"
+                               value="Estrategica">
                     </label>
-                    <label class="opcion opcion-continuidad">                    
-                        <span>Continuidad Operativa</span>                    
-                        <input
-                            type="radio"
-                            name="tipo-iniciativa"
-                            value="Continuidad Operativa">                    
+                    <label class="opcion opcion-transformacion">
+                        <span>Transformación</span>
+                        <input type="radio"
+                               name="tipo-iniciativa"
+                               value="Transformacion">
+                    </label>
+                    <label class="opcion opcion-regulatoria">
+                        <span>Regulatoria</span>
+                        <input type="radio"
+                               name="tipo-iniciativa"
+                               value="Regulatoria">
+                    </label>
+                    <label class="opcion opcion-continuidad">
+                        <span>Continuidad Operativa</span>
+                        <input type="radio"
+                               name="tipo-iniciativa"
+                               value="Continuidad Operativa">
                     </label>
                 </div>
+            </div>
+            <div class="campo">
+                <div class="campo-label">
+                    <span class="material-symbols-outlined icono">
+                        target
+                    </span>
+                    <label>Objetivo estratégico</label>
+                </div>
+                <input type="text">
             </div>
             <div class="campo campo-planeada">
                 <div class="campo-label">
@@ -224,20 +217,18 @@
                 <div class="opciones-tipo">
                     <label class="opcion opcion-si">
                         <span>Sí</span>
-                        <input
-                            type="radio"
-                            name="planeada"
-                            value="Si">
+                        <input type="radio"
+                               name="planeada"
+                               value="Si">
                     </label>
                     <label class="opcion opcion-no">
                         <span>No</span>
-                        <input
-                            type="radio"
-                            name="planeada"
-                            value="No">
+                        <input type="radio"
+                               name="planeada"
+                               value="No">
                     </label>
                 </div>
-            </div>        
+            </div>
         </div>
     </div>
 </div>
