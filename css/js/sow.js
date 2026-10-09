@@ -195,6 +195,7 @@ function agregarProceso(){
         <tr>
             <td>
                 <select>
+                    <option>Seleccionar</option>
                     <option>ORIGINACIÓN DxN</option>
                     <option>ORIGINACIÓN CAPTACIÓN</option>
                     <option>VENTA ASISTIDA</option>
