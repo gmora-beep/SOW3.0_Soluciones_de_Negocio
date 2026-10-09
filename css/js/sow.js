@@ -183,3 +183,38 @@ function exportarPDF(){
             );    
         });
     }
+function agregarProceso(){
+
+    const tabla =
+        document.getElementById(
+            "procesos-impactados"
+        );
+    tabla.insertAdjacentHTML(
+        "beforeend",
+        `
+        <tr>
+            <td>
+                <select>
+                    <option>ORIGINACIÓN DxN</option>
+                    <option>ORIGINACIÓN CAPTACIÓN</option>
+                    <option>VENTA ASISTIDA</option>
+                    <option>CSB PROMOTOR</option>
+                    <option>PUC</option>
+                    <option>APP DE INVERSIONES</option>
+                    <option>SPEI</option>
+                    <option>PROCESOS CORE</option>
+                    <option>BANCA POR INTERNET</option>
+                    <option>ATENCIÓN AL CLIENTE</option>
+
+                </select>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        `
+    );
+}
