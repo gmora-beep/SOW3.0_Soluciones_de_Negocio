@@ -1491,17 +1491,17 @@ body.page-exit{
     gap:18px;
 }
 .sow-hero-icon{
-    width:72px;
-    height:72px;
-    border-radius:18px;
-    background:rgba(19,181,191,.15);
+    width:64px;
+    height:64px;
+    border-radius:16px;
+    background:rgba(19,181,191,.18);
     border:2px solid #13b5bf;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    box-shadow:
+        0 0 18px rgba(19,181,191,.25);
 }
 .sow-hero-icon .material-symbols-outlined{
-    font-size:42px;
+    font-size:38px;
+    font-weight:700;
     color:#13b5bf;
 }
 .sow-hero-content h1{
@@ -1509,11 +1509,13 @@ body.page-exit{
     font-size:38px;
     font-weight:700;
     margin:0;
+    margin-bottom:4px;
     text-shadow:
         0 3px 12px rgba(0,0,0,.8);
 }
 .sow-hero-content p{
     color:white;
+    margin:0;
     margin-top:8px;
     text-shadow:
         0 2px 10px rgba(0,0,0,.75);
@@ -1524,9 +1526,9 @@ body.page-exit{
     gap:14px;
     padding:14px 18px;
     border-radius:16px;
-    background:rgba(255,255,255,.08);
+    background:rgba(15,40,70,.55);
     backdrop-filter:blur(10px);
-    border:1px solid rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.18);
     color:white;
 }
 .sow-fecha-card label{
