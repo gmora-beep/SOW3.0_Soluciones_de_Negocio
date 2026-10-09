@@ -1491,18 +1491,20 @@ body.page-exit{
     gap:18px;
 }
 .sow-hero-icon{
-    width:64px;
-    height:64px;
-    border-radius:16px;
-    background:rgba(19,181,191,.18);
+    width:72px;
+    height:72px;
+    border-radius:18px;
+    background:rgba(19,181,191,.10);
     border:2px solid #13b5bf;
-    box-shadow:
-        0 0 18px rgba(19,181,191,.25);
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .sow-hero-icon .material-symbols-outlined{
-    font-size:38px;
-    font-weight:700;
+    font-size:44px;
     color:#13b5bf;
+    font-variation-settings:
+        'FILL' 1;
 }
 .sow-hero-content h1{
     color:white;
@@ -1516,7 +1518,7 @@ body.page-exit{
 .sow-hero-content p{
     color:white;
     margin:0;
-    margin-top:8px;
+    margin-top:0px;
     text-shadow:
         0 2px 10px rgba(0,0,0,.75);
 }
