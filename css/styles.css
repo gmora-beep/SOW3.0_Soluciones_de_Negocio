@@ -151,18 +151,10 @@ body{
     line-height:1;
 }
 
-.seccion-titulo h2{
-    margin:0;
-    font-size:20px;
-    color:#13b5bf;
-    font-weight:700;
-    letter-spacing:.3px;
-}
-
 .informacion-general{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:24px;
+    grid-template-columns:50% 50%;
+    gap:0;
     padding:10px 0;
     align-items:start;
 }
@@ -177,10 +169,13 @@ body{
     border-right:1px solid rgba(255,255,255,.08);
     padding-right:18px;
 }
+.columna:last-child{
+    padding-left:18px;
+}
 
 .campo{
     display:grid;
-    grid-template-columns:170px 1fr;
+    grid-template-columns:10px 1fr;
     align-items:center;
     gap:12px;
     margin-bottom:8px;
