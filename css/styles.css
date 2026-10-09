@@ -434,10 +434,11 @@ body{
 .seccion-e .seccion-letra{
     background:#2563eb;
 }
-.beneficios-grid{
+.beneficios-grid-superior{
     display:grid;
-    grid-template-columns:1fr 1fr 1.2fr;
+    grid-template-columns:1fr 1fr;
     gap:16px;
+    margin-bottom:16px;
 }
 .beneficio-card{
     border:1px solid #f0dfbf;
@@ -448,6 +449,9 @@ body{
     display:grid;
     grid-template-columns:1fr 1fr 1.2fr;
     gap:16px;
+}
+.kpi-container{
+    width:100%;
 }
 
 .beneficio-card{
