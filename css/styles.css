@@ -1358,3 +1358,22 @@ body.page-exit{
     box-shadow:
         0 0 0 2px rgba(255,255,255,.25);
 }
+.opcion-si input[type="radio"]{
+    border-color:#13b5bf;
+}
+
+.opcion-si input[type="radio"]:checked{
+    background:#13b5bf;
+}
+.opcion-no input[type="radio"]{
+    border-color:#9ca3af;
+}
+
+.opcion-no input[type="radio"]:checked{
+    background:#9ca3af;
+}
+
+.campo-planeada .campo-label{
+    width:180px;
+    min-width:180px;
+}
