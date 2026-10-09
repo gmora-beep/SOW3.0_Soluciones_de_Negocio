@@ -184,6 +184,7 @@ function exportarPDF(){
         });
     }
 function agregarProceso(){
+    console.log("agregarProceso ejecutada");
     const tabla =
         document.getElementById(
             "procesos-impactados"
