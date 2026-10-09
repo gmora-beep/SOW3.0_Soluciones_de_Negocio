@@ -1374,6 +1374,9 @@ body.page-exit{
 }
 
 .campo-planeada .campo-label{
-    width:180px;
-    min-width:180px;
+    width:130px;
+    min-width:130px;
+}
+.opcion-continuidad{
+    width:190px !important;
 }
