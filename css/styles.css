@@ -230,16 +230,17 @@ body{
 .opcion{
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    gap:10px;
-    min-width:120px;
-    height:34px;
-    padding:0 10px;
-    border-radius:8px;
+    justify-content:center;
+    gap:8px;
+    height:36px;
+    min-width:0;
+    padding:0 8px;
+    border-radius:10px;
     background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.15);
     color:white;
-    cursor:pointer;
+    white-space:nowrap;
+    overflow:hidden;
+    font-size:13px;
 }
 .campo-label{
     display:flex;
@@ -612,15 +613,10 @@ body{
 .opcion input[type="radio"]{
     appearance:none;
     -webkit-appearance:none;
-
     width:12px;
     height:12px;
-
-    border:2px solid #cbd5e1;
     border-radius:4px;
-
-    cursor:pointer;
-
+    margin:0;
     flex-shrink:0;
 }
 .opcion-estrategica input[type="radio"]{
@@ -1403,9 +1399,11 @@ body.page-exit{
     min-width:180px !important;
 }
 .campo-tipo-iniciativa .opciones-tipo{
-    justify-content:flex-start;
-    gap:10px;
-    flex-wrap:nowrap;
+    display:grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap:8px;
+    width:100%;
 }
 .sow-hero{
     display:flex;
