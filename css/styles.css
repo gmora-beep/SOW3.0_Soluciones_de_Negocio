@@ -209,17 +209,14 @@ body{
 .opciones-tipo{
     display:flex;
     gap:8px;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 }
 
 .opcion{
-    background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:10px;
-    color:white;
-    height:40px;
-    padding:0 12px;
-    width:auto;
+    width:auto !important;
+    min-width:auto !important;
+    padding:8px 12px;
+    justify-content:center;
 }
 .campo-label{
     display:flex;
@@ -1375,7 +1372,8 @@ body.page-exit{
 }
 
 .opcion-continuidad{
-    width:190px !important;
+    width:auto !important;
+    padding:8px 12px;
 }
 .campo-tipo-iniciativa{
     justify-content:flex-start !important;
@@ -1502,5 +1500,11 @@ body.page-exit{
 }
 .columna:last-child .campo input,
 .columna:last-child .campo select{
-    max-width:480px;
+    max-width:460px;
+    width:100%;
+}
+.columna:first-child .campo input,
+.columna:first-child .campo select{
+    max-width:420px;
+    width:100%;
 }
