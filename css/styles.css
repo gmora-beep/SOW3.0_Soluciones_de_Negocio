@@ -1395,3 +1395,69 @@ body.page-exit{
     gap:10px;
     flex-wrap:nowrap;
 }
+.sow-hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 22px;
+    margin:12px 14px;
+    border-radius:20px;
+    background:rgba(15,40,70,.40);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.10);
+}
+.sow-hero-left{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+.sow-hero-icon{
+    width:72px;
+    height:72px;
+    border-radius:18px;
+    background:rgba(19,181,191,.15);
+    border:2px solid #13b5bf;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.sow-hero-icon .material-symbols-outlined{
+    font-size:42px;
+    color:#13b5bf;
+}
+.sow-hero-content h1{
+    margin:0;
+    color:white;
+    font-size:32px;
+    font-weight:700;
+}
+.sow-hero-content p{
+    margin:8px 0 0;
+    color:rgba(255,255,255,.90);
+    font-size:18px;
+}
+.sow-fecha-card{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:14px 18px;
+    border-radius:16px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.12);
+    color:white;
+}
+.sow-fecha-card label{
+    display:block;
+    font-size:12px;
+    opacity:.8;
+    margin-bottom:4px;
+}
+.sow-fecha-card #fecha-actual{
+    font-size:18px;
+    font-weight:700;
+}
+.sow-fecha-card .material-symbols-outlined{
+    font-size:26px;
+    color:#13b5bf;
+}
