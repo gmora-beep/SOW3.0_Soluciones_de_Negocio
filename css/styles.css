@@ -213,32 +213,40 @@ body{
 }
 .opciones-planeada{
     display:flex;
-    gap:24px;
     align-items:center;
+    gap:32px;
 }
 .radio-simple{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:12px;
     color:white;
-    font-size:15px;
+    font-size:18px;
     font-weight:600;
     cursor:pointer;
 }
 .radio-simple input[type="radio"]{
     appearance:none;
     -webkit-appearance:none;
-    width:16px;
-    height:16px;
+    width:22px;
+    height:22px;
     border-radius:50%;
-    border:2px solid rgba(255,255,255,.6);
+    border:3px solid rgba(255,255,255,.55);
     background:transparent;
+    cursor:pointer;
+    transition:.25s ease;
+    margin:0;
 }
 .radio-simple input[type="radio"]:checked{
-    background:#13b5bf;
-    border-color:#13b5bf;
+    background:#13d3d8;
+    border-color:#13d3d8;
     box-shadow:
-        0 0 0 3px rgba(19,181,191,.20);
+        0 0 0 4px rgba(
+            19,
+            211,
+            216,
+            .20
+        );
 }
 .opcion{
     display:flex;
@@ -1374,7 +1382,7 @@ body.page-exit{
 .campo-planeada{
     justify-content:flex-start !important;
     align-items:center;
-    gap:12px;
+    gap:10px;
 }
 .campo-planeada .opciones-tipo{
     display:flex;
@@ -1405,10 +1413,9 @@ body.page-exit{
 }
 
 .campo-planeada .campo-label{
-    width:auto !important;
-    min-width:auto !important;
+    width:190px;
+    min-width:190px;
 }
-
 
 .campo-tipo-iniciativa{
     justify-content:flex-start !important;
