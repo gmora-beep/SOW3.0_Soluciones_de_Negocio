@@ -344,7 +344,9 @@
         </div>
         <h2>BENEFICIOS ESPERADOS</h2>
     </div>
-<div class="beneficios-grid">
+
+<!-- FILA SUPERIOR -->
+<div class="beneficios-grid-superior">
     <!-- Cuantitativos -->
     <div>
         <div class="beneficio-card">
@@ -366,7 +368,8 @@
             </table>
         </div>
         <div class="acciones-tabla">
-            <button type="button"
+            <button
+                type="button"
                 class="btn-agregar"
                 onclick="agregarBeneficioCuantitativo()">
                 ＋ Agregar
@@ -393,41 +396,43 @@
             </table>
         </div>
         <div class="acciones-tabla">
-            <button type="button"
+            <button
+                type="button"
                 class="btn-agregar"
                 onclick="agregarBeneficioCualitativo()">
                 ＋ Agregar
             </button>
         </div>
     </div>
-    <!-- KPI -->
-    <div>
-        <div class="beneficio-card">
-            <div class="beneficio-header">
-                <span class="material-symbols-outlined icono-beneficio">
-                    track_changes
-                </span>
-                <h3>KPI objetivo</h3>
-            </div>
-            <table class="tabla-beneficios">
-                <thead>
-                    <tr>
-                        <th>Indicador</th>
-                        <th>Situación actual</th>
-                        <th>Meta esperada</th>
-                    </tr>
-                </thead>
-                <tbody id="kpis">
-                </tbody>
-            </table>
+</div>
+<!-- KPI DEBAJO -->
+<div class="kpi-container">
+    <div class="beneficio-card">
+        <div class="beneficio-header">
+            <span class="material-symbols-outlined icono-beneficio">
+                track_changes
+            </span>
+            <h3>KPI objetivo</h3>
         </div>
-        <div class="acciones-tabla">
-            <button type="button"
-                class="btn-agregar"
-                onclick="agregarKPI()">
-                ＋ Agregar
-            </button>
-        </div>
+        <table class="tabla-beneficios">
+            <thead>
+                <tr>
+                    <th>Indicador</th>
+                    <th>Situación actual</th>
+                    <th>Meta esperada</th>
+                </tr>
+            </thead>
+            <tbody id="kpis">
+            </tbody>
+        </table>
+    </div>
+    <div class="acciones-tabla">
+        <button
+            type="button"
+            class="btn-agregar"
+            onclick="agregarKPI()">
+            ＋ Agregar
+        </button>
     </div>
 </div>
 <div class="seccion-card">
