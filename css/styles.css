@@ -1457,6 +1457,7 @@ body.page-exit{
 .sow-fecha-card #fecha-actual{
     font-size:18px;
     font-weight:700;
+    color:white;
 }
 .sow-fecha-card .material-symbols-outlined{
     font-size:26px;
