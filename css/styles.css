@@ -1342,13 +1342,14 @@ body.page-exit{
     background:#9ca3af;
 }
 .campo-planeada{
-    display:flex;
+    justify-content:flex-start !important;
     align-items:center;
-    gap:16px;
+    gap:12px;
 }
 .campo-planeada .opciones-tipo{
-    margin-left:0;
+    display:flex;
     gap:8px;
+    margin-left:0;
 }
 .campo-planeada .opcion{
     width:110px;
@@ -1374,9 +1375,10 @@ body.page-exit{
 }
 
 .campo-planeada .campo-label{
-    width:130px;
-    min-width:130px;
+    width:auto !important;
+    min-width:auto !important;
 }
+
 .opcion-continuidad{
     width:190px !important;
 }
