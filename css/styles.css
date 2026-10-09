@@ -162,10 +162,8 @@ body{
 .informacion-general{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:24px;
-    border:1px solid #edf0f2;
-    border-radius:8px;
-    padding:18px;
+    gap:30px;
+    padding:10px 0;
     align-items:start;
 }
 
@@ -211,33 +209,31 @@ body{
 
 .opciones-tipo{
     display:flex;
-    gap:10px;
+    gap:8px;
     flex-wrap:wrap;
 }
 
 .opcion{
-    display:flex !important;
-    align-items:center;
-    gap:8px;
-    width:auto !important;
-    padding:10px 14px;
-    border:1px solid #dbe1e8;
-    border-radius:8px;
-    background:white;
-    cursor:pointer;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:10px;
+    color:white;
+    height:40px;
+    padding:0 12px;
+    width:auto;
 }
 .campo-label{
-    width:260px;
-    min-width:260px;
     display:flex;
     align-items:center;
     gap:10px;
-    white-space:nowrap;
+    color:white;
+    font-size:14px;
+    font-weight:600;
 }
 
 .icono{
-    color:#11B5BF;
-    font-size:22px;
+    color:#13d3d8;
+    font-size:20px;
 }
 
 .opciones-tipo{
@@ -1466,4 +1462,40 @@ body.page-exit{
 .sow-page{
     min-height:calc(100vh - 95px);
     padding:12px 24px 24px 24px;
+}
+.seccion-card-a{
+    background:rgba(15,40,70,.35);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:24px;
+    padding:18px 20px;
+    margin:14px;
+}
+.campo input,
+.campo select{
+    width:100%;
+    height:42px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.08);
+    color:white;
+    padding:0 14px;
+    font-size:14px;
+}
+.campo input::placeholder{
+    color:rgba(255,255,255,.55);
+}
+.campo option{
+    background:#123159;
+    color:white;
+}
+.seccion-card-a .seccion-titulo h2{
+    color:#13d3d8;
+    font-size:24px;
+    font-weight:700;
+}
+.seccion-subtitulo{
+    color:rgba(255,255,255,.65);
+    font-size:13px;
+    margin-left:10px;
 }
