@@ -1335,3 +1335,26 @@ body.page-exit{
     box-sizing:border-box;
     display:block;
 }
+.opcion-continuidad input[type="radio"]{
+    border-color:#9ca3af;
+}
+.opcion-continuidad input[type="radio"]:checked{
+    background:#9ca3af;
+}
+.campo-planeada{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+.campo-planeada .opciones-tipo{
+    margin-left:0;
+    gap:8px;
+}
+.campo-planeada .opcion{
+    width:110px;
+    justify-content:space-between;
+}
+.opcion input[type="radio"]:checked{
+    box-shadow:
+        0 0 0 2px rgba(255,255,255,.25);
+}
