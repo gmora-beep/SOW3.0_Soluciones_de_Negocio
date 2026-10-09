@@ -252,12 +252,13 @@ body{
         translate(-50%,-50%)
         scale(0);
     transition:.25s ease;
+    pointer-events:none;
 }
 .radio-simple input[type="radio"]:checked{
     border-color:#13d3d8;
-    border:3px solid #13d3d8;
     box-shadow:
-        0 0 8px rgba(19,211,216,.55);
+        0 0 8px rgba(19,211,216,.55),
+        0 0 0 2px rgba(19,211,216,.20);
 }
 .radio-simple input[type="radio"]:checked::before{
     transform:
