@@ -133,7 +133,6 @@ body{
     display:flex;
     align-items:center;
     gap:12px;
-    margin-bottom:4px;
 }
 
 .seccion-letra{
@@ -1588,11 +1587,11 @@ body.page-exit{
 .seccion-subtitulo{
     color:rgba(255,255,255,.65);
     font-size:13px;
-    margin-left:10px;
+    margin-left:8px;
 }
 .columna:last-child .campo input,
 .columna:last-child .campo select{
-    max-width:460px;
+    max-width:400px;
     width:100%;
 }
 .columna:first-child .campo input,
